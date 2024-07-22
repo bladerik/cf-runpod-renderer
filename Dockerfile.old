@@ -4,24 +4,15 @@ FROM nvidia/cuda:12.2.0-base-ubuntu22.04
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PYTHONUNBUFFERED=1
 
-# Install system dependencies and NVIDIA/CUDA related packages
-RUN apt-get update && apt-get install -y --no-install-recommends \
+# Install system dependencies
+RUN apt-get update && apt-get install -y \
     wget \
     gnupg \
     python3 \
     python3-pip \
-    build-essential \
-    curl \
-    vulkan-tools \
-    && curl -fsSL https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-keyring_1.0-1_all.deb -o cuda-keyring.deb \
-    && dpkg -i cuda-keyring.deb \
-    && apt-get update \
-    && apt-get install -y --no-install-recommends cuda-drivers \
-    && rm -rf /var/lib/apt/lists/* \
-    && rm cuda-keyring.deb
+    vulkan-tools
 
-# Verify Vulkan installation
-RUN vulkaninfo && sleep 5
+RUN apt install nvidia-driver-550
 
 # Install Playwright and browsers
 RUN pip3 install playwright
