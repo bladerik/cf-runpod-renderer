@@ -16,13 +16,16 @@ RUN vulkaninfo
 
 RUN apt-get install -y libnvidia-gl-525
 
+# Install Playwright and browsers
+RUN pip3 install playwright
+RUN playwright install-deps
+RUN playwright install chrome
+
 # Install Python dependencies
 COPY requirements.txt /app/requirements.txt
 RUN pip3 install --no-cache-dir -r /app/requirements.txt
 
-# Install Playwright and browsers
-RUN playwright install-deps
-RUN playwright install chrome
+
 
 # Set up the working directory
 WORKDIR /app
