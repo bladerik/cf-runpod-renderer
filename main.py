@@ -1,0 +1,178 @@
+import asyncio
+import base64
+import json
+from playwright.async_api import async_playwright
+
+
+async def gpu_info(data: dict):
+    print("NVIDIA SMI Output:")
+    print(subprocess.check_output(["nvidia-smi"]).decode())
+
+    print("Vulkan Info:")
+    print(subprocess.check_output(["vulkaninfo"]).decode())
+
+    scene = data['scene']
+    width = scene['width']
+    height = scene['height']
+
+    print("Initializing browser...")
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(
+            channel="chrome",
+            ignore_default_args=["--headless"],
+            args=[
+                #vulkan - cpu only
+                '--no-sandbox',
+                '--headless=new',
+                '--use-angle=vulkan',
+                '--enable-features=Vulkan',
+                '--disable-vulkan-surface',
+                '--enable-unsafe-webgpu',
+            ]
+        )
+
+        page = await browser.new_page(viewport={'width': width, 'height': height})
+        await page.goto("chrome://gpu")
+
+        download_path = '/tmp/gpu_info.txt'
+        async with page.expect_download() as download_info:
+            await page.click('#download-to-file')
+
+        download = await download_info.value
+        await download.save_as(download_path)
+
+        with open(download_path, 'r') as f:
+            gpu_info_text = f.read()
+
+        await browser.close()
+        print(gpu_info_text)
+
+        return {
+            "gpu_info_text": gpu_info_text,
+        }
+        
+async def render_pixi_scene(data: dict):
+    scene_props = data['options']
+    scene = data['scene']
+    fonts = data['fonts']
+
+    width = scene['width']
+    height = scene['height']
+    fps = scene['fps']
+    from_frame = scene_props.get('from_frame', 0)
+    to_frame = scene_props.get('to_frame', None)
+    transparent = scene_props.get('transparent', False)
+    quality = scene_props.get('quality', 100)
+    extension = "png" if transparent else "jpg"
+
+    print("Initializing browser...")
+    async with async_playwright() as p:
+        browser = await p.chromium.launch(
+            headless=True,
+            channel="chrome",
+            args=[
+                '--no-sandbox',
+                '--use-gl=egl',
+                '--enable-unsafe-webgpu',
+                '--ignore-gpu-blocklist',
+                '--enable-gpu-rasterization',
+                '--enable-zero-copy',
+                '--disable-gpu-driver-bug-workarounds',
+                '--enable-features=Vulkan,UseSkiaRenderer',
+                '--mute-audio',
+            ]
+        )
+
+        page = await browser.new_page(viewport={'width': width, 'height': height})
+
+        print("Loading scene...")
+        await page.goto("https://content.renderfries.com/public/app/scene-pixi.html")
+
+        await page.evaluate("""
+        (props) => {
+            const canvas = document.createElement("canvas");
+            canvas.id = "cf-canvas";
+            canvas.width = props.width;
+            canvas.height = props.height;
+            const gl = canvas.getContext("webgl", {stencil: true, preserveDrawingBuffer: true});
+            document.body.appendChild(canvas);
+        }
+        """, {"width": width, "height": height})
+
+        print("WebGL context ready")
+        await asyncio.sleep(2)
+
+        browser_data = {
+            "scene": scene,
+            "fps": fps,
+            "fonts": fonts
+        }
+
+        result = await page.evaluate("""
+        (data) => {
+            try {
+                window.SCENE = data.scene;
+                window.FPS = data.fps;
+                window.FONTS = data.fonts;
+                window.loadScene()
+                return { success: true, message: 'Data added successfully' };
+            } catch (error) {
+                console.error('Error in loadScene:', error);
+                return { success: false, error: error.toString() };
+            }
+        }
+        """, browser_data)
+        print("Evaluate result:", result)
+
+        try:
+            await page.wait_for_selector("#cf-animation-loaded", state="attached", timeout=10000)
+            print("scene loaded")
+        except Exception as e:
+            print(f"Error waiting for #cf-animation-loaded: {e}")
+
+        total_frames = await page.evaluate('window.getTotalFrames()')
+        if not total_frames:
+            total_frames = int(scene['duration'] * fps)
+
+        to_frame = to_frame or total_frames
+
+        print(f"Rendering frames from {from_frame} to {to_frame}")
+
+        frames = []
+
+        for i in range(from_frame, to_frame + 1):
+            await page.evaluate(f'window.setFrame({i})')
+            await page.wait_for_selector(f"#frame-{i}", state="attached", timeout=5000)
+
+            frame_data = await page.evaluate(f"""
+                () => {{
+                    const canvas = document.querySelector("#cf-canvas");
+                    return canvas.toDataURL('image/{"png" if transparent else "jpeg"}', {quality/100});
+                }}
+            """)
+
+            frames.append(frame_data)
+            print(f"Frame {i} captured")
+
+        await browser.close()
+
+        return {"frames": frames}
+
+def handler(event):
+    job_input = event["input"]
+    # authorization = job_input["authorization"]
+    # if authorization != os.environ.get("AUTH_TOKEN"):
+    #     return {"error": "Invalid authorization"}
+    
+    
+    # if error:
+    #     return {"error": error}
+
+    output_data = json.loads(msg.decode("utf-8"))
+    # Return the output
+    return output_data
+
+
+runpod.serverless.start({
+    "handler": handler
+})
