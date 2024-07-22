@@ -10,12 +10,11 @@ RUN apt-get update && apt-get install -y \
     gnupg \
     python3 \
     python3-pip \
-    vulkan-tools \
-    nvidia-driver-525 \
-    nvidia-utils-525 \
-    libnvidia-gl-525
+    vulkan-tools
 
 RUN vulkaninfo
+
+RUN apt-get install -y libnvidia-gl-525
 
 # Install Python dependencies
 COPY requirements.txt /app/requirements.txt

@@ -160,17 +160,18 @@ async def render_pixi_scene(data: dict):
 
 def handler(event):
     job_input = event["input"]
+    event = job_input["event"]
+
     # authorization = job_input["authorization"]
     # if authorization != os.environ.get("AUTH_TOKEN"):
     #     return {"error": "Invalid authorization"}
-    
-    
-    # if error:
-    #     return {"error": error}
 
-    output_data = json.loads(msg.decode("utf-8"))
-    # Return the output
-    return output_data
+    if event == "gpu_info":
+        return gpu_info(job_input)
+    elif event == "render":
+        return render_pixi_scene(job_input)
+
+    return {"error": "Invalid event " + event}
 
 
 runpod.serverless.start({
