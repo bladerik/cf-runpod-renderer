@@ -9,11 +9,11 @@ from playwright.async_api import async_playwright
 
 
 async def gpu_info(data: dict):
-    print("NVIDIA SMI Output:")
-    print(subprocess.check_output(["nvidia-smi"]).decode())
+    # print("NVIDIA SMI Output:")
+    # print(subprocess.check_output(["nvidia-smi"]).decode())
 
-    print("Vulkan Info:")
-    print(subprocess.check_output(["vulkaninfo"]).decode())
+    # print("Vulkan Info:")
+    # print(subprocess.check_output(["vulkaninfo"]).decode())
 
     scene = data['scene']
     width = scene['width']
