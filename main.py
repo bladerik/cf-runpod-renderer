@@ -76,13 +76,11 @@ async def render_pixi_scene(data: dict):
             channel="chrome",
             args=[
                 '--no-sandbox',
-                '--use-gl=egl',
+                '--headless=new',
+                '--use-angle=vulkan',
+                '--enable-features=Vulkan',
+                '--disable-vulkan-surface',
                 '--enable-unsafe-webgpu',
-                '--ignore-gpu-blocklist',
-                '--enable-gpu-rasterization',
-                '--enable-zero-copy',
-                '--disable-gpu-driver-bug-workarounds',
-                '--enable-features=Vulkan,UseSkiaRenderer',
                 '--mute-audio',
             ]
         )
