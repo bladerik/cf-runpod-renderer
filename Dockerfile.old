@@ -12,7 +12,7 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     vulkan-tools
 
-RUN apt install nvidia-driver-550
+RUN apt install -y nvidia-driver-550
 
 # Install Playwright and browsers
 RUN pip3 install playwright
