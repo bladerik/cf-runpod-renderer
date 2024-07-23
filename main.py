@@ -78,9 +78,10 @@ async def render_pixi_scene(data: dict):
                 '--no-sandbox',
                 '--headless=new',
                 '--use-angle=vulkan',
-                '--enable-features=Vulkan',
+                '--enable-features=Vulkan,UseSkiaRenderer,VaapiVideoDecoder,VaapiVideoEncoder',
                 '--disable-vulkan-surface',
                 '--enable-unsafe-webgpu',
+                '--enable-gpu-rasterization',
                 '--mute-audio',
             ]
         )

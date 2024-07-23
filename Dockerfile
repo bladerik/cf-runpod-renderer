@@ -4,33 +4,17 @@ FROM nvidia/cuda:12.4.0-base-ubuntu22.04
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PYTHONUNBUFFERED=1
 
+RUN apt-get update && apt-get install -y python3 python3-pip python3-apt
 # Install system dependencies
+RUN apt-get install -y software-properties-common
+# Install system dependencies
+RUN add-apt-repository ppa:graphics-drivers/ppa -y
+
 RUN apt-get update && apt-get install -y \
-    wget \
-    gnupg \
-    python3 \
-    python3-pip \
+    # nvidia-graphics-drivers-550 \
     nvidia-driver-550 \
     libnvidia-gl-550 \
     vulkan-tools
 
-# Install Playwright and browsers
-RUN pip3 install playwright
-RUN playwright install-deps
-RUN playwright install chrome
-
-# Install Python dependencies
-COPY requirements.txt /app/requirements.txt
-RUN pip3 install --no-cache-dir -r /app/requirements.txt
-
-# Set up the working directory
-WORKDIR /app
-
-# Copy the application code
-COPY . /app
-
-# Expose the port your application will run on
-EXPOSE 8000
-
 # Command to run the application
-CMD ["python3", "main.py"]
+ENTRYPOINT ["/opt/nvidia/nvidia_entrypoint.sh"]
