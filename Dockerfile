@@ -66,6 +66,10 @@ COPY nvidia_icd.json /etc/vulkan/icd.d
 #     sh "$DRIVER_NAME" --disable-nouveau --silent && \
 #     rm "$DRIVER_NAME"
 
+# Create and activate virtual environment
+RUN python3 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
+
 # Install Playwright and browsers
 RUN pip3 install playwright
 RUN playwright install-deps
@@ -74,6 +78,15 @@ RUN playwright install chrome
 # Install Python dependencies
 COPY requirements.txt /app/requirements.txt
 RUN pip3 install --no-cache-dir -r /app/requirements.txt
+
+# # Install Playwright and browsers
+# RUN pip3 install playwright --break-system-packages
+# RUN playwright install-deps
+# RUN playwright install chrome
+
+# # Install Python dependencies
+# COPY requirements.txt /app/requirements.txt
+# RUN pip3 install --no-cache-dir -r /app/requirements.txt
 
 # Set up the working directory
 WORKDIR /app
