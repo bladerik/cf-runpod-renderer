@@ -1,6 +1,6 @@
 # FROM nvidia/cuda:12.4.0-base-ubuntu22.04
 # FROM runpod/pytorch:2.1.0-py3.10-cuda11.8.0-devel-ubuntu22.04
-FROM ubuntu:23.04
+FROM ubuntu:24.04
 # runpod/pytorch:2.2.0-py3.10-cuda12.1.1-devel-ubuntu22.04
 # FROM runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04
 
