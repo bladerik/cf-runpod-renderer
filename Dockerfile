@@ -1,4 +1,6 @@
-FROM nvidia/cuda:12.4.0-base-ubuntu22.04
+# FROM nvidia/cuda:12.4.0-base-ubuntu22.04
+# FROM runpod/pytorch:2.1.0-py3.10-cuda11.8.0-devel-ubuntu22.04
+FROM runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04
 
 # Set environment variables
 ENV DEBIAN_FRONTEND=noninteractive
