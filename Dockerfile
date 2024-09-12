@@ -12,16 +12,16 @@ ENV PYTHONUNBUFFERED=1
 ENV NVIDIA_DRIVER_CAPABILITIES=all
 ENV NVIDIA_VISIBLE_DEVICES=all
 
-RUN apt-get update \
-    && apt-get install -y \
-    # wget \
-    # gnupg \
-    python3 \
-    python3-pip
-    # libxext6 \
-    # libvulkan1 \
-    # libvulkan-dev \
-    # vulkan-tools
+# RUN apt-get update \
+#     && apt-get install -y \
+#     # wget \
+#     # gnupg \
+#     python3 \
+#     python3-pip
+#     # libxext6 \
+#     # libvulkan1 \
+#     # libvulkan-dev \
+#     # vulkan-tools
 
 # RUN apt-get install -y python3.12-venv
 # COPY nvidia_icd.json /etc/vulkan/icd.d
