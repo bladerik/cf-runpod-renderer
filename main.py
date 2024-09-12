@@ -11,6 +11,13 @@ from playwright.async_api import async_playwright
 async def gpu_info(data: dict):
     # print("NVIDIA SMI Output:")
     # print(subprocess.check_output(["nvidia-smi"]).decode())
+        # Check NVIDIA-SMI
+    try:
+        nvidia_smi = subprocess.check_output(["nvidia-smi"]).decode()
+        print("NVIDIA-SMI output:")
+        print(nvidia_smi)
+    except subprocess.CalledProcessError:
+        print("nvidia-smi command failed. NVIDIA driver might not be installed or accessible.")
 
     # print("Vulkan Info:")
     # print(subprocess.check_output(["vulkaninfo"]).decode())
