@@ -1,6 +1,6 @@
 # FROM nvidia/cuda:12.4.0-base-ubuntu22.04
 # FROM runpod/pytorch:2.1.0-py3.10-cuda11.8.0-devel-ubuntu22.04
-FROM ubuntu:24.04
+FROM ghcr.io/selkies-project/nvidia-egl-desktop:latest
 # runpod/pytorch:2.2.0-py3.10-cuda12.1.1-devel-ubuntu22.04
 # FROM runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04
 
@@ -14,17 +14,17 @@ ENV NVIDIA_VISIBLE_DEVICES=all
 
 RUN apt-get update \
     && apt-get install -y \
-    wget \
-    gnupg \
+    # wget \
+    # gnupg \
     python3 \
     python3-pip \
-    libxext6 \
-    libvulkan1 \
-    libvulkan-dev \
-    vulkan-tools
+    # libxext6 \
+    # libvulkan1 \
+    # libvulkan-dev \
+    # vulkan-tools
 
-RUN apt-get install -y python3.12-venv
-COPY nvidia_icd.json /etc/vulkan/icd.d
+# RUN apt-get install -y python3.12-venv
+# COPY nvidia_icd.json /etc/vulkan/icd.d
 
 # RUN apt-get update && apt-get install -y \
 #     wget \
