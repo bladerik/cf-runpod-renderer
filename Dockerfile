@@ -85,6 +85,7 @@ RUN pip3 install playwright --break-system-packages
 RUN playwright install-deps
 # RUN playwright install chrome
 
+USER root
 RUN apt-get install -y python3.12-venv
 RUN python3 -m venv /opt/venv
 ENV PATH="/opt/venv/bin:$PATH"
