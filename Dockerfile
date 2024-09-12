@@ -83,7 +83,7 @@ ENV NVIDIA_VISIBLE_DEVICES=all
 # Install Playwright and browsers
 RUN pip3 install playwright --break-system-packages
 RUN playwright install-deps
-RUN playwright install chrome
+# RUN playwright install chrome
 
 # Install Python dependencies
 COPY requirements.txt /app/requirements.txt
