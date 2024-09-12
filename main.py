@@ -56,7 +56,6 @@ async def gpu_info(data: dict):
             gpu_info_text = f.read()
 
         await browser.close()
-        print(gpu_info_text)
 
         return {
             "gpu_info_text": gpu_info_text,
