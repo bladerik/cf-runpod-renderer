@@ -19,30 +19,28 @@ async def gpu_info(data: dict):
     scene = data['scene']
     width = scene['width']
     height = scene['height']
+    scene_props = data['options']
 
+    default_args = [
+        '--no-sandbox',
+        '--headless=new',
+        '--use-gl=vulkan',
+        '--use-angle=vulkan',
+        '--enable-features=Vulkan,UseSkiaRenderer,VaapiVideoDecoder,VaapiVideoEncoder',
+        '--disable-vulkan-surface',
+        '--enable-unsafe-webgpu',
+        '--enable-gpu-rasterization',
+        '--mute-audio',
+    ]
+
+    # Use custom args from data['options'] if present, otherwise use default_args
+    browser_args = scene_props.get('browser_args', default_args)
     print("Initializing browser...")
     async with async_playwright() as p:
         browser = await p.chromium.launch(
             channel="chrome",
             ignore_default_args=["--headless"],
-            args=[
-                '--no-sandbox',
-                '--headless=new',
-                '--use-gl=egl',
-                '--use-angle=vulkan',
-                '--enable-features=Vulkan,UseSkiaRenderer,VaapiVideoDecoder,VaapiVideoEncoder',
-                '--disable-vulkan-surface',
-                '--enable-unsafe-webgpu',
-                '--enable-gpu-rasterization',
-                '--mute-audio',
-                #vulkan - cpu only
-                # '--no-sandbox',
-                # '--headless=new',
-                # '--use-angle=vulkan',
-                # '--enable-features=Vulkan',
-                # '--disable-vulkan-surface',
-                # '--enable-unsafe-webgpu',
-            ]
+            args=browser_args
         )
 
         page = await browser.new_page(viewport={'width': width, 'height': height})
@@ -95,22 +93,26 @@ async def render_pixi_scene(data: dict):
     quality = scene_props.get('quality', 100)
     extension = "png" if transparent else "jpg"
 
+    default_args = [
+        '--no-sandbox',
+        '--headless=new',
+        '--use-gl=vulkan',
+        '--use-angle=vulkan',
+        '--enable-features=Vulkan,UseSkiaRenderer,VaapiVideoDecoder,VaapiVideoEncoder',
+        '--disable-vulkan-surface',
+        '--enable-unsafe-webgpu',
+        '--enable-gpu-rasterization',
+        '--mute-audio',
+    ]
+
+    # Use custom args from data['options'] if present, otherwise use default_args
+    browser_args = scene_props.get('browser_args', default_args)
     print("Initializing browser...")
     async with async_playwright() as p:
         browser = await p.chromium.launch(
             headless=True,
             channel="chrome",
-            args=[
-                '--no-sandbox',
-                '--headless=new',
-                '--use-gl=egl',
-                '--use-angle=vulkan',
-                '--enable-features=Vulkan,UseSkiaRenderer,VaapiVideoDecoder,VaapiVideoEncoder',
-                '--disable-vulkan-surface',
-                '--enable-unsafe-webgpu',
-                '--enable-gpu-rasterization',
-                '--mute-audio',
-            ]
+            args=browser_args
         )
 
         page = await browser.new_page(viewport={'width': width, 'height': height})
