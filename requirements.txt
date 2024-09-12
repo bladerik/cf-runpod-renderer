@@ -3,4 +3,5 @@ uvicorn
 playwright
 pillow
 runpod
+setuptools
 envkey
