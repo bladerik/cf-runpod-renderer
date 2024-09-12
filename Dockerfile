@@ -64,7 +64,11 @@ RUN apt-get update && apt-get install -y \
     libxcb-dri3-0 \
     libxshmfence1 \
     mesa-utils \
-    libvulkan1
+    libvulkan1 \
+    libegl1-mesa \
+    libopengl0 \
+    libvulkan1 \
+    mesa-vulkan-drivers
 
 # Download and install NVIDIA driver
 # RUN DRIVER_URL="https://us.download.nvidia.com/tesla/535.104.12/NVIDIA-Linux-x86_64-535.104.12.run" && \

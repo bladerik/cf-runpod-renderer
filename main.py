@@ -12,12 +12,6 @@ async def gpu_info(data: dict):
     # print("NVIDIA SMI Output:")
     # print(subprocess.check_output(["nvidia-smi"]).decode())
         # Check NVIDIA-SMI
-    try:
-        nvidia_smi = subprocess.check_output(["nvidia-smi"]).decode()
-        print("NVIDIA-SMI output:")
-        print(nvidia_smi)
-    except subprocess.CalledProcessError:
-        print("nvidia-smi command failed. NVIDIA driver might not be installed or accessible.")
 
     # print("Vulkan Info:")
     # print(subprocess.check_output(["vulkaninfo"]).decode())
@@ -32,13 +26,22 @@ async def gpu_info(data: dict):
             channel="chrome",
             ignore_default_args=["--headless"],
             args=[
-                #vulkan - cpu only
                 '--no-sandbox',
                 '--headless=new',
+                '--use-gl=egl',
                 '--use-angle=vulkan',
-                '--enable-features=Vulkan',
+                '--enable-features=Vulkan,UseSkiaRenderer,VaapiVideoDecoder,VaapiVideoEncoder',
                 '--disable-vulkan-surface',
                 '--enable-unsafe-webgpu',
+                '--enable-gpu-rasterization',
+                '--mute-audio',
+                #vulkan - cpu only
+                # '--no-sandbox',
+                # '--headless=new',
+                # '--use-angle=vulkan',
+                # '--enable-features=Vulkan',
+                # '--disable-vulkan-surface',
+                # '--enable-unsafe-webgpu',
             ]
         )
 
@@ -54,6 +57,23 @@ async def gpu_info(data: dict):
 
         with open(download_path, 'r') as f:
             gpu_info_text = f.read()
+
+        try:
+            print("Vulkan Info:")
+            print(subprocess.check_output(["vulkaninfo"]).decode())
+        except subprocess.CalledProcessError:
+            print("vulkaninfo command failed. Vulkan might not be installed or accessible.")
+        except FileNotFoundError:
+            print("vulkaninfo command not found. Vulkan tools might not be installed.")
+
+        try:
+            nvidia_smi = subprocess.check_output(["nvidia-smi"]).decode()
+            print("NVIDIA-SMI output:")
+            print(nvidia_smi)
+        except subprocess.CalledProcessError:
+            print("nvidia-smi command failed. NVIDIA driver might not be installed or accessible.")
+
+        
 
         await browser.close()
 
@@ -83,6 +103,7 @@ async def render_pixi_scene(data: dict):
             args=[
                 '--no-sandbox',
                 '--headless=new',
+                '--use-gl=egl',
                 '--use-angle=vulkan',
                 '--enable-features=Vulkan,UseSkiaRenderer,VaapiVideoDecoder,VaapiVideoEncoder',
                 '--disable-vulkan-surface',
