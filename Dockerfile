@@ -102,5 +102,8 @@ COPY . /app
 # Expose the port your application will run on
 EXPOSE 8000
 
+# reset entrypoint
+ENTRYPOINT ["/bin/bash", "-c"]
+
 # Command to run the application
 CMD ["python3", "main.py"]
