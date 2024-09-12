@@ -8,13 +8,40 @@ ENV DEBIAN_FRONTEND=noninteractive
 ENV PYTHONUNBUFFERED=1
 
 # Install system dependencies
+# RUN apt-get update && apt-get install -y \
+#     wget \
+#     gnupg \
+#     python3 \
+#     python3-pip \
+#     nvidia-driver-550 \
+#     libnvidia-gl-550 \
+#     vulkan-tools \
+#     libgl1-mesa-dev \
+#     xvfb \
+#     libxi-dev \
+#     libxcursor-dev \
+#     libxdamage-dev \
+#     libxrandr-dev \
+#     libxcomposite-dev \
+#     libxext-dev \
+#     libxfixes-dev \
+#     libxrender-dev \
+#     libgles2-mesa-dev \
+#     libegl1-mesa-dev \
+#     libgbm-dev \
+#     libglu1-mesa \
+#     libxi6 \
+#     libxrender1 \
+#     libxrandr2 \
+#     libx11-xcb1 \
+#     libxcb-dri3-0 \
+#     libxshmfence1 \
+#     mesa-utils \
+#     libvulkan1
+
 RUN apt-get update && apt-get install -y \
     wget \
     gnupg \
-    python3 \
-    python3-pip \
-    nvidia-driver-550 \
-    libnvidia-gl-550 \
     vulkan-tools \
     libgl1-mesa-dev \
     xvfb \
