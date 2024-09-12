@@ -36,6 +36,13 @@ RUN apt-get update && apt-get install -y \
     mesa-utils \
     libvulkan1
 
+# Download and install NVIDIA driver
+RUN DRIVER_URL="https://us.download.nvidia.com/tesla/535.104.12/NVIDIA-Linux-x86_64-535.104.12.run" && \
+    DRIVER_NAME="NVIDIA-Linux-driver.run" && \
+    wget -O "$DRIVER_NAME" "$DRIVER_URL" && \
+    sh "$DRIVER_NAME" --disable-nouveau --silent && \
+    rm "$DRIVER_NAME"
+
 # Install Playwright and browsers
 RUN pip3 install playwright
 RUN playwright install-deps
