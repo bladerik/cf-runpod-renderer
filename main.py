@@ -35,7 +35,10 @@ async def gpu_info(data: dict):
 
     # Use custom args from data['options'] if present, otherwise use default_args
     browser_args = scene_props.get('browser_args', default_args)
+
     print("Initializing browser...")
+    print(browser_args)
+    
     async with async_playwright() as p:
         browser = await p.chromium.launch(
             channel="chrome",
