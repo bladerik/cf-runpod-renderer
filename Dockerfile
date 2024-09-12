@@ -85,6 +85,8 @@ RUN pip3 install playwright --break-system-packages
 RUN playwright install-deps
 # RUN playwright install chrome
 
+RUN python3 -m venv /opt/venv
+ENV PATH="/opt/venv/bin:$PATH"
 # Install Python dependencies
 COPY requirements.txt /app/requirements.txt
 RUN pip3 install --no-cache-dir -r /app/requirements.txt
