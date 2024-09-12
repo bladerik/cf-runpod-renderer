@@ -38,7 +38,7 @@ async def gpu_info(data: dict):
 
     print("Initializing browser...")
     print(browser_args)
-    
+
     async with async_playwright() as p:
         browser = await p.chromium.launch(
             channel="chrome",
@@ -59,13 +59,15 @@ async def gpu_info(data: dict):
         with open(download_path, 'r') as f:
             gpu_info_text = f.read()
 
+        vulkan_info = ""
         try:
             print("Vulkan Info:")
-            print(subprocess.check_output(["vulkaninfo"]).decode())
+            vulkan_info = subprocess.check_output(["vulkaninfo"]).decode()
         except subprocess.CalledProcessError:
-            print("vulkaninfo command failed. Vulkan might not be installed or accessible.")
+            vulkan_info = "Vulkan info not available: Command failed"
         except FileNotFoundError:
-            print("vulkaninfo command not found. Vulkan tools might not be installed.")
+            vulkan_info = "Vulkan info not available: Command not found"
+
 
         try:
             nvidia_smi = subprocess.check_output(["nvidia-smi"]).decode()
@@ -80,6 +82,7 @@ async def gpu_info(data: dict):
 
         return {
             "gpu_info_text": gpu_info_text,
+        "vulkan_info": vulkan_info,
         }
         
 async def render_pixi_scene(data: dict):
