@@ -1,43 +1,16 @@
 # FROM nvidia/cuda:12.4.0-base-ubuntu22.04
 # FROM runpod/pytorch:2.1.0-py3.10-cuda11.8.0-devel-ubuntu22.04
-FROM runpod/pytorch:2.2.0-py3.10-cuda12.1.1-devel-ubuntu22.04
+FROM ubuntu:22.04
+# runpod/pytorch:2.2.0-py3.10-cuda12.1.1-devel-ubuntu22.04
 # FROM runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04
 
 # Set environment variables
 ENV DEBIAN_FRONTEND=noninteractive
 ENV PYTHONUNBUFFERED=1
 
-# Install system dependencies
-# RUN apt-get update && apt-get install -y \
-#     wget \
-#     gnupg \
-#     python3 \
-#     python3-pip \
-#     nvidia-driver-550 \
-#     libnvidia-gl-550 \
-#     vulkan-tools \
-#     libgl1-mesa-dev \
-#     xvfb \
-#     libxi-dev \
-#     libxcursor-dev \
-#     libxdamage-dev \
-#     libxrandr-dev \
-#     libxcomposite-dev \
-#     libxext-dev \
-#     libxfixes-dev \
-#     libxrender-dev \
-#     libgles2-mesa-dev \
-#     libegl1-mesa-dev \
-#     libgbm-dev \
-#     libglu1-mesa \
-#     libxi6 \
-#     libxrender1 \
-#     libxrandr2 \
-#     libx11-xcb1 \
-#     libxcb-dri3-0 \
-#     libxshmfence1 \
-#     mesa-utils \
-#     libvulkan1
+# Needed to share GPU
+ENV NVIDIA_DRIVER_CAPABILITIES=all
+ENV NVIDIA_VISIBLE_DEVICES=all
 
 RUN apt-get update && apt-get install -y \
     wget \
@@ -68,6 +41,7 @@ RUN apt-get update && apt-get install -y \
     libegl1-mesa \
     libopengl0 \
     libvulkan1 \
+    libnvidia-gl-525 \
     mesa-vulkan-drivers
 
 # Download and install NVIDIA driver
