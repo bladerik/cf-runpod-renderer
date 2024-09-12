@@ -40,8 +40,8 @@ RUN apt-get update && apt-get install -y \
     libxshmfence1 \
     mesa-utils \
     libvulkan1 \
-    libegl1-mesa \
-    libopengl0
+    libegl1-mesa
+    # libopengl0
     # libvulkan1 
     # libnvidia-gl-525 \
     # mesa-vulkan-drivers
