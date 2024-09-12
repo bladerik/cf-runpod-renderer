@@ -15,6 +15,8 @@ ENV NVIDIA_VISIBLE_DEVICES=all
 RUN apt-get update && apt-get install -y \
     wget \
     gnupg \
+    python3 \
+    python3-pip \
     vulkan-tools \
     libgl1-mesa-dev \
     xvfb \
