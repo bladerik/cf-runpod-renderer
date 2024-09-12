@@ -41,8 +41,8 @@ RUN apt-get update && apt-get install -y \
     mesa-utils \
     libvulkan1 \
     libegl1-mesa \
-    libopengl0 \
-    libvulkan1 
+    libopengl0
+    # libvulkan1 
     # libnvidia-gl-525 \
     # mesa-vulkan-drivers
 
