@@ -17,7 +17,7 @@ RUN apt-get update \
     # wget \
     # gnupg \
     python3 \
-    python3-pip \
+    python3-pip
     # libxext6 \
     # libvulkan1 \
     # libvulkan-dev \
