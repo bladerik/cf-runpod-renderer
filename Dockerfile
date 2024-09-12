@@ -1,6 +1,6 @@
 # FROM nvidia/cuda:12.4.0-base-ubuntu22.04
 # FROM runpod/pytorch:2.1.0-py3.10-cuda11.8.0-devel-ubuntu22.04
-FROM nvidia/vulkan:1.2.133-450
+FROM ubuntu:23.04
 # runpod/pytorch:2.2.0-py3.10-cuda12.1.1-devel-ubuntu22.04
 # FROM runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04
 
@@ -12,39 +12,52 @@ ENV PYTHONUNBUFFERED=1
 ENV NVIDIA_DRIVER_CAPABILITIES=all
 ENV NVIDIA_VISIBLE_DEVICES=all
 
-RUN apt-get update && apt-get install -y \
+RUN apt-get update \
+    && apt-get install -y \
     wget \
     gnupg \
     python3 \
     python3-pip \
-    vulkan-tools \
-    libgl1-mesa-dev \
-    xvfb \
-    libxi-dev \
-    libxcursor-dev \
-    libxdamage-dev \
-    libxrandr-dev \
-    libxcomposite-dev \
-    libxext-dev \
-    libxfixes-dev \
-    libxrender-dev \
-    libgles2-mesa-dev \
-    libegl1-mesa-dev \
-    libgbm-dev \
-    libglu1-mesa \
-    libxi6 \
-    libxrender1 \
-    libxrandr2 \
-    libx11-xcb1 \
-    libxcb-dri3-0 \
-    libxshmfence1 \
-    mesa-utils \
+    libxext6 \
     libvulkan1 \
-    libegl1-mesa
-    # libopengl0
-    # libvulkan1 
-    # libnvidia-gl-525 \
-    # mesa-vulkan-drivers
+    libvulkan-dev \
+    vulkan-tools
+
+COPY nvidia_icd.json /etc/vulkan/icd.d
+
+# RUN apt-get update && apt-get install -y \
+#     wget \
+#     gnupg \
+#     python3 \
+#     python3-pip \
+#     vulkan-tools \
+#     libgl1-mesa-dev \
+#     xvfb \
+#     libxi-dev \
+#     libxcursor-dev \
+#     libxdamage-dev \
+#     libxrandr-dev \
+#     libxcomposite-dev \
+#     libxext-dev \
+#     libxfixes-dev \
+#     libxrender-dev \
+#     libgles2-mesa-dev \
+#     libegl1-mesa-dev \
+#     libgbm-dev \
+#     libglu1-mesa \
+#     libxi6 \
+#     libxrender1 \
+#     libxrandr2 \
+#     libx11-xcb1 \
+#     libxcb-dri3-0 \
+#     libxshmfence1 \
+#     mesa-utils \
+#     libvulkan1 \
+#     libegl1-mesa \
+#     libopengl0 \
+#     libvulkan1 \
+#     libnvidia-gl-525 \
+#     mesa-vulkan-drivers
 
 # Download and install NVIDIA driver
 # RUN DRIVER_URL="https://us.download.nvidia.com/tesla/535.104.12/NVIDIA-Linux-x86_64-535.104.12.run" && \
