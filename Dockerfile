@@ -22,6 +22,8 @@ RUN useradd luser
 COPY --chown=luser:luser --from=vulkan-sample-dev /home/luser/bin/renderheadless /home/luser/bin/renderheadless
 COPY --chown=luser:luser --from=vulkan-sample-dev /home/luser/Vulkan-master/shaders/glsl/renderheadless/ /home/luser/Vulkan-master/shaders/glsl/renderheadless/
 
+RUN apt-get install -y python3 python3-pip
+
 # Install Playwright and browsers
 RUN pip3 install playwright
 RUN playwright install-deps
