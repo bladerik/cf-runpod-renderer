@@ -15,12 +15,12 @@ FROM ubuntu:22.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 RUN apt-get update
-RUN apt-get install -y software-properties-common 
+RUN apt-get install -y software-properties-common libvulkan1
 RUN add-apt-repository -y ppa:graphics-drivers/ppa
 RUN apt-get update
-RUN apt-get install -y vulkan-tools libnvidia-gl-525
+RUN apt-get install -y libnvidia-gl-535
 
-ENV VK_ICD_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json 
+# ENV VK_ICD_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json 
 # ENV NVIDIA_DRIVER_CAPABILITIES=graphics
 
 # RUN useradd luser
