@@ -17,7 +17,7 @@ RUN apt-get update
 RUN apt-get install -y software-properties-common 
 RUN add-apt-repository -y ppa:graphics-drivers/ppa
 RUN apt-get update
-RUN apt-get install -y vulkan-tools && nvidia-driver-525
+RUN apt-get install -y vulkan-tools libnvidia-gl-525
 
 ENV VK_ICD_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json 
 ENV NVIDIA_DRIVER_CAPABILITIES=graphics
