@@ -13,8 +13,11 @@ RUN cmake -DUSE_HEADLESS=ON Vulkan-master && \
 FROM ubuntu:22.04 AS vulkan-sample-run
 
 ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get update && apt-get install -y software-properties-common && add-apt-repository -y ppa:graphics-drivers/ppa && apt-get update
-RUN apt-get install -y vulkan-tools && nvidia-driver-525 && apt-get clean
+RUN apt-get update
+RUN apt-get install -y software-properties-common 
+RUN add-apt-repository -y ppa:graphics-drivers/ppa
+RUN apt-get update
+RUN apt-get install -y vulkan-tools && nvidia-driver-525
 
 ENV VK_ICD_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json 
 ENV NVIDIA_DRIVER_CAPABILITIES=graphics
