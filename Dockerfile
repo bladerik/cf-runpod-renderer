@@ -1,40 +1,90 @@
-# FROM ubuntu:22.04 AS vulkan-sample-dev
+# FROM nvidia/cuda:12.4.0-base-ubuntu22.04
+# FROM runpod/pytorch:2.1.0-py3.10-cuda11.8.0-devel-ubuntu22.04
+# FROM ghcr.io/selkies-project/nvidia-egl-desktop:latest
+# runpod/pytorch:2.2.0-py3.10-cuda12.1.1-devel-ubuntu22.04
+FROM runpod/pytorch:2.4.0-py3.11-cuda12.4.1-devel-ubuntu22.04
 
-# ARG DEBIAN_FRONTEND=noninteractive
-# RUN apt-get update && apt-get install -y gcc g++ make cmake libvulkan-dev libglm-dev curl unzip && apt-get clean
+# Set environment variables
+ENV DEBIAN_FRONTEND=noninteractive
+ENV PYTHONUNBUFFERED=1
 
-# RUN useradd luser
-# USER luser
-# WORKDIR /home/luser
-# RUN curl -L -o master.zip https://github.com/SaschaWillems/Vulkan/archive/refs/heads/master.zip && unzip master.zip && rm master.zip
-# RUN cmake -DUSE_HEADLESS=ON Vulkan-master && \
-#     make renderheadless
+# Needed to share GPU
+ENV NVIDIA_DRIVER_CAPABILITIES=all
+ENV NVIDIA_VISIBLE_DEVICES=all
 
-# FROM ubuntu:22.04 AS vulkan-sample-run
-FROM ubuntu:22.04
+RUN apt-get update \
+    && apt-get install -y software-properties-common libvulkan1
+#     && apt-get install -y \
+#     # wget \
+#     # gnupg \
+#     python3 \
+#     python3-pip
+#     # libxext6 \
+#     # libvulkan1 \
+#     # libvulkan-dev \
+#     # vulkan-tools
 
-ARG DEBIAN_FRONTEND=noninteractive
-RUN apt-get update
-RUN apt-get install -y software-properties-common libvulkan1
-RUN add-apt-repository -y ppa:graphics-drivers/ppa
-RUN apt-get update
-RUN apt-get install -y libnvidia-gl-535
+# RUN apt-get install -y python3.12-venv
+# COPY nvidia_icd.json /etc/vulkan/icd.d
 
-# ENV VK_ICD_FILENAMES=/usr/share/glvnd/egl_vendor.d/10_nvidia.json 
-# ENV NVIDIA_DRIVER_CAPABILITIES=graphics
+# RUN apt-get update && apt-get install -y \
+#     wget \
+#     gnupg \
+#     python3 \
+#     python3-pip \
+#     vulkan-tools \
+#     libgl1-mesa-dev \
+#     xvfb \
+#     libxi-dev \
+#     libxcursor-dev \
+#     libxdamage-dev \
+#     libxrandr-dev \
+#     libxcomposite-dev \
+#     libxext-dev \
+#     libxfixes-dev \
+#     libxrender-dev \
+#     libgles2-mesa-dev \
+#     libegl1-mesa-dev \
+#     libgbm-dev \
+#     libglu1-mesa \
+#     libxi6 \
+#     libxrender1 \
+#     libxrandr2 \
+#     libx11-xcb1 \
+#     libxcb-dri3-0 \
+#     libxshmfence1 \
+#     mesa-utils \
+#     libvulkan1 \
+#     libegl1-mesa \
+#     libopengl0 \
+#     libvulkan1 \
+#     libnvidia-gl-525 \
+#     mesa-vulkan-drivers
 
-# RUN useradd luser
-# COPY --chown=luser:luser --from=vulkan-sample-dev /home/luser/bin/renderheadless /home/luser/bin/renderheadless
-# COPY --chown=luser:luser --from=vulkan-sample-dev /home/luser/Vulkan-master/shaders/glsl/renderheadless/ /home/luser/Vulkan-master/shaders/glsl/renderheadless/
+# Download and install NVIDIA driver
+# RUN DRIVER_URL="https://us.download.nvidia.com/tesla/535.104.12/NVIDIA-Linux-x86_64-535.104.12.run" && \
+#     DRIVER_NAME="NVIDIA-Linux-driver.run" && \
+#     wget -O "$DRIVER_NAME" "$DRIVER_URL" && \
+#     sh "$DRIVER_NAME" --disable-nouveau --silent && \
+#     rm "$DRIVER_NAME"
 
-RUN apt-get install -y python3 python3-pip
+# Create and activate virtual environment
+# RUN python3 -m venv /opt/venv
+# ENV PATH="/opt/venv/bin:$PATH"
+
+# # Install Playwright and browsers
+# RUN pip3 install playwright
+# RUN playwright install-deps
+# RUN playwright install chrome
+
+# # Install Python dependencies
+# COPY requirements.txt /app/requirements.txt
+# RUN pip3 install --no-cache-dir -r /app/requirements.txt
 
 # Install Playwright and browsers
 RUN pip3 install playwright
 RUN playwright install-deps
 RUN playwright install chrome
-
-ENV PATH="/opt/venv/bin:$PATH"
 # Install Python dependencies
 COPY requirements.txt /app/requirements.txt
 RUN pip3 install --no-cache-dir -r /app/requirements.txt
