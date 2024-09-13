@@ -37,7 +37,7 @@ async def gpu_info(data: dict):
         '--enable-features=UseSkiaRenderer,VaapiVideoDecoder,VaapiVideoEncoder', # Vulkan
         # '--disable-vulkan-surface',
         '--enable-unsafe-webgpu',
-        '--use-cmd-decoder=passthrough',
+        # '--use-cmd-decoder=passthrough',
         # '--enable-gpu-rasterization',
         '--mute-audio',
     ]
