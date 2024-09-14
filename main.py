@@ -30,16 +30,13 @@ async def gpu_info(data: dict):
     scene_props = data['options']
 
     default_args = [
-        '--no-sandbox',
-        '--headless=new',
-        '--use-gl=angle',
-        '--use-angle=gl-egl',
-        '--enable-features=UseSkiaRenderer,VaapiVideoDecoder,VaapiVideoEncoder', # Vulkan
-        # '--disable-vulkan-surface',
-        '--enable-unsafe-webgpu',
-        # '--use-cmd-decoder=passthrough',
-        # '--enable-gpu-rasterization',
-        '--mute-audio',
+        "--enable-features=Vulkan,UseSkiaRenderer",
+        "--use-vulkan=swiftshader",
+        "--use-gl=swiftshader",
+        "--ignore-gpu-blacklist",
+        "--enable-unsafe-webgpu",
+        "--disable-vulkan-fallback-to-gl-for-testing",
+        "--use-angle=vulkan"
     ]
 
     # Use custom args from data['options'] if present, otherwise use default_args
