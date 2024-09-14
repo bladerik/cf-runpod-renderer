@@ -24,7 +24,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libxcursor-dev \
         libxxf86vm-dev \
         libvulkan-dev && \
-    rm -rf /var/lib/apt/lists/*
+        python3 \
+        python3-pip \
+        rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install playwright
 RUN playwright install-deps
