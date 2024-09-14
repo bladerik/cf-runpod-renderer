@@ -1,5 +1,5 @@
 
-FROM nvidia/cuda:opengl:1.2-glvnd-runtime-ubuntu22.04
+FROM nvidia/opengl:1.2-glvnd-runtime-ubuntu22.04
 
 # Set environment variables
 ENV DEBIAN_FRONTEND=noninteractive
