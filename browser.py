@@ -24,6 +24,8 @@ class BrowserSceneRenderer:
         self.concurrency = data.get('concurrency', 1)
         self.browser_type = data.get('browserType', 'firefox')
         self.output_video_path = data.get('outputVideoPath', f"output_{int(time.time())}.mp4")
+        self.headless = data.get('headless', False)
+        self.browser_args = data.get('browserArgs', [])
         
         WORKDIR = os.path.join(os.environ.get('RESOURCES_DIR', '/tmp'), f"render/{self.scene['id']}")
         os.makedirs(WORKDIR, exist_ok=True)
@@ -36,14 +38,14 @@ class BrowserSceneRenderer:
     def set_concurrency(self, concurrency: int):
         self.concurrency = concurrency
 
-    async def start_browser(self, headless: bool = False):
+    async def start_browser(self):
         if hasattr(self, 'browser'):
             return
 
         self.playwright = await async_playwright().start()
         if self.browser_type == 'firefox':
             self.browser = await self.playwright.firefox.launch(
-                headless=headless,
+                headless=self.headless,
                 firefox_user_prefs={
                     "security.fileuri.strict_origin_policy": False,
                     "webgl.force-enabled": True,
@@ -57,7 +59,8 @@ class BrowserSceneRenderer:
         else:
             self.browser = await self.playwright.chromium.launch(
                 channel=self.browser_type,
-                headless=headless
+                headless=self.headless,
+                args=self.browser_args
             )
 
     async def render_chunk(self, from_frame: int, to_frame: int):
