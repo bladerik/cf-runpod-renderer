@@ -7,3 +7,6 @@ setuptools
 envkey
 ffmpeg-python
 numpy>=1.20.0
+celery
+aio-celery
+redis
