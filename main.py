@@ -155,7 +155,7 @@ async def render_pixi_scene(data: dict):
         print("Evaluate result:", result)
 
         try:
-            await page.wait_for_selector("#cf-animation-loaded", state="attached", timeout=10000)
+            await page.wait_for_selector("#cf-animation-loaded", state="attached", timeout=100000)
             print("scene loaded")
         except Exception as e:
             print(f"Error waiting for #cf-animation-loaded: {e}")
