@@ -25,12 +25,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         libxxf86vm-dev \
         libvulkan-dev \
         python3 \
-        python3-pip && \
-        rm -rf /var/lib/apt/lists/*
+        python3-pip \
+        dumb-init \
+        xvfb && \
+    rm -rf /var/lib/apt/lists/*
 
 RUN pip3 install playwright
 RUN playwright install-deps
-RUN playwright install chrome
+RUN playwright install chrome firefox
 # Install Python dependencies
 COPY requirements.txt /app/requirements.txt
 RUN pip3 install --no-cache-dir -r /app/requirements.txt
