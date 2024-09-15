@@ -37,7 +37,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN apt-get update
 RUN apt-get install -y software-properties-common libvulkan1
 RUN add-apt-repository -y ppa:graphics-drivers/ppa
-RUN apt-get install libnvidia-gl-550
+RUN apt-get install -y libnvidia-gl-550
 
 RUN pip3 install playwright
 RUN playwright install-deps
