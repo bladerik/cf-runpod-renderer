@@ -1,7 +1,9 @@
 fastapi
 uvicorn
 playwright
-pillow
+pillow>=9.0.0
 runpod
 setuptools
 envkey
+ffmpeg-python
+numpy>=1.20.0

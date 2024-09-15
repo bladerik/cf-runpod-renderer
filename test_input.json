@@ -1,18 +1,9 @@
 {
-    "browser_args": ["--no-sandbox", "--hide-scrollbars", "--mute-audio"],
     "input": {
         "event": "render",
         "fonts": [],
-        "options": {
-            "to_frame": 30,
-            "browser_args": [
-                "--use-angle=vulkan",
-                "--disable-vulkan-surface",
-                "--enable-unsafe-webgpu",
-                "--enable-gpu-rasterization",
-                "--mute-audio"
-            ]
-        },
+        "concurrency": 3,
+        "toFrame": 90,
         "scene": {
             "id": "d72d923d-8921-4c2b-9472-affc71067b1f",
             "name": "Overcoming Staffing Challenges in the Restaurant Business",

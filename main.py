@@ -4,6 +4,7 @@ import json
 import subprocess 
 import runpod
 import envkey
+from browser import BrowserSceneRenderer
 
 from playwright.async_api import async_playwright
 
@@ -84,102 +85,14 @@ async def gpu_info(data: dict):
         "vulkan_info": vulkan_info,
         }
         
+
 async def render_pixi_scene(data: dict):
-    scene_props = data['options']
-    scene = data['scene']
-    fonts = data['fonts']
-    subtitles = data['subtitles']
-    width = scene['width']
-    height = scene['height']
-    fps = scene['fps']
-    from_frame = scene_props.get('from_frame', 0)
-    to_frame = scene_props.get('to_frame', None)
-    transparent = scene_props.get('transparent', False)
-    quality = scene_props.get('quality', 100)
-    extension = "png" if transparent else "jpg"
+    renderer = BrowserSceneRenderer(data)
+    await renderer.start_browser()
+    video = await renderer.render()
+    await renderer.browser.close()
 
-    default_args = [
-        '--no-sandbox',
-        '--mute-audio',
-    ]
-
-    # Use custom args from data['options'] if present, otherwise use default_args
-    browser_args = scene_props.get('browser_args', default_args)
-    print("Initializing browser...")
-    async with async_playwright() as p:
-        browser = await p.firefox.launch(
-            headless=False,
-            # channel="chrome",
-            # args=browser_args
-        )
-
-        page = await browser.new_page(viewport={'width': width, 'height': height})
-
-        print("Loading scene...")
-        await page.goto("https://content.renderfries.com/public/app/scene-pixi.html")
-
-        await page.evaluate("""
-        (props) => {
-            const canvas = document.createElement("canvas");
-            canvas.id = "cf-canvas";
-            canvas.width = props.width;
-            canvas.height = props.height;
-            const gl = canvas.getContext("webgl", {stencil: true, preserveDrawingBuffer: true});
-            document.body.appendChild(canvas);
-        }
-        """, {"width": width, "height": height})
-
-        print("WebGL context ready")
-        await asyncio.sleep(2)
-
-        browser_data = {
-            "scene": scene,
-            "fps": fps,
-            "fonts": fonts,
-            "subtitles": subtitles
-        }
-
-        result = await page.evaluate("""
-        (data) => {
-            try {
-                window.SCENE = data.scene;
-                window.FPS = data.fps;
-                window.FONTS = data.fonts;
-                window.SUBTITLES = data.subtitles;
-                window.loadScene()
-                return { success: true, message: 'Data added successfully' };
-            } catch (error) {
-                console.error('Error in loadScene:', error);
-                return { success: false, error: error.toString() };
-            }
-        }
-        """, browser_data)
-        print("Evaluate result:", result)
-
-        try:
-            await page.wait_for_selector("#cf-animation-loaded", state="attached", timeout=100000)
-            print("scene loaded")
-        except Exception as e:
-            print(f"Error waiting for #cf-animation-loaded: {e}")
-
-        total_frames = await page.evaluate('window.getTotalFrames()')
-        if not total_frames:
-            total_frames = int(scene['duration'] * fps)
-
-        to_frame = to_frame or total_frames
-
-        print(f"Rendering frames from {from_frame} to {to_frame}")
-
-        frames = []
-
-        for i in range(from_frame, to_frame + 1):
-            frame_data = await page.evaluate(f'window.setFrame({i})')
-            frames.append(frame_data)
-            print(f"Frame {i} captured")
-
-        await browser.close()
-
-        return {"frames": frames}
+    return {"video": video}
 
 def handler(event):
     job_input = event["input"]
