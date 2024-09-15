@@ -47,7 +47,6 @@ COPY . /app
 EXPOSE 8000
 
 # reset entrypoint
-ENTRYPOINT ["/bin/bash", "-c"]
-
+ENTRYPOINT ["/usr/bin/dumb-init", "--", "xvfb-run", "--auto-servernum", "--server-args",  "-screen 0 1280x1024x24 -ac"]
 # Command to run the application
 CMD ["python3", "main.py"]
