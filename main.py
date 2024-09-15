@@ -100,13 +100,6 @@ async def render_pixi_scene(data: dict):
 
     default_args = [
         '--no-sandbox',
-        '--headless=new',
-        '--use-gl=vulkan',
-        '--use-angle=vulkan',
-        '--enable-features=Vulkan,UseSkiaRenderer,VaapiVideoDecoder,VaapiVideoEncoder',
-        '--disable-vulkan-surface',
-        '--enable-unsafe-webgpu',
-        '--enable-gpu-rasterization',
         '--mute-audio',
     ]
 
@@ -114,10 +107,10 @@ async def render_pixi_scene(data: dict):
     browser_args = scene_props.get('browser_args', default_args)
     print("Initializing browser...")
     async with async_playwright() as p:
-        browser = await p.chromium.launch(
-            headless=True,
-            channel="chrome",
-            args=browser_args
+        browser = await p.firefox.launch(
+            headless=False,
+            # channel="chrome",
+            # args=browser_args
         )
 
         page = await browser.new_page(viewport={'width': width, 'height': height})
