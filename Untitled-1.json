@@ -1,0 +1,3460 @@
+{
+    "browser_args": ["--no-sandbox", "--hide-scrollbars", "--mute-audio"],
+    "input": {
+        "event": "render",
+        "fonts": [],
+        "options": {
+            "to_frame": 30,
+            "browser_args": [
+                "--use-angle=vulkan",
+                "--disable-vulkan-surface",
+                "--enable-unsafe-webgpu",
+                "--enable-gpu-rasterization",
+                "--mute-audio"
+            ]
+        },
+        "scene": {
+            "id": "d72d923d-8921-4c2b-9472-affc71067b1f",
+            "name": "Overcoming Staffing Challenges in the Restaurant Business",
+            "checksum": "1a8a9a043c5724d641f7a59e1647e125",
+            "width": 1080,
+            "height": 1920,
+            "duration": 90.967,
+            "fps": 30,
+            "background": null,
+            "layers": [
+                {
+                    "id": "d225617e-1b65-43fc-b78d-cf3ef565909b",
+                    "name": "Layer 1",
+                    "checksum": "4a163563c282a22f90daef6d4818b3d4",
+                    "order": 1,
+                    "engine": "CANVAS2D",
+                    "components": [
+                        {
+                            "id": "f7de86be-770e-4459-90ed-346bf41667a9",
+                            "checksum": "9d20ed9478964036486c320d9e88bee4",
+                            "name": "video",
+                            "type": "VIDEO",
+                            "asset_id": "665df93a890bb8abab0bf142",
+                            "element": {
+                                "type": "video",
+                                "path": "https://b2.contentfries.com/uploads-link/t-632487439b9de032c708f306/u-114/0cefc612-03ac-4f18-b6f1-e6fd05186982/inspired-taiwanese-moves-to-mexico-to-deep-dive-mexican-culture-elp-250mp4.mp4?token=Zdj5gyAeZlZwWQY99Tls_tNvNOlF680OWTlQvjzVdjE&expires=1726473017",
+                                "config": {
+                                    "x": -1891,
+                                    "y": 0,
+                                    "width": 3413.76,
+                                    "height": 1920
+                                }
+                            },
+                            "components": [],
+                            "keyframes": [],
+                            "start_at": 0,
+                            "end_at": 4.333,
+                            "metadata": {
+                                "starting_time": 642.133,
+                                "ending_time": 657.9,
+                                "containBlur": false
+                            },
+                            "order": 0
+                        },
+                        {
+                            "id": "4737a8f2-b138-4172-8267-072987228ff9",
+                            "checksum": "8f636618067436d903f3182cfefb5526",
+                            "name": "video",
+                            "type": "VIDEO",
+                            "asset_id": "665df93a890bb8abab0bf142",
+                            "element": {
+                                "type": "video",
+                                "path": "https://b2.contentfries.com/uploads-link/t-632487439b9de032c708f306/u-114/0cefc612-03ac-4f18-b6f1-e6fd05186982/inspired-taiwanese-moves-to-mexico-to-deep-dive-mexican-culture-elp-250mp4.mp4?token=Zdj5gyAeZlZwWQY99Tls_tNvNOlF680OWTlQvjzVdjE&expires=1726473017",
+                                "config": {
+                                    "x": -1891,
+                                    "y": 0,
+                                    "width": 3413.76,
+                                    "height": 1920
+                                }
+                            },
+                            "components": [],
+                            "keyframes": [],
+                            "start_at": 4.333,
+                            "end_at": 6.7,
+                            "metadata": {
+                                "starting_time": 646.466,
+                                "ending_time": 657.9,
+                                "containBlur": false
+                            },
+                            "order": 1
+                        },
+                        {
+                            "id": "91bfcc1d-cc48-4346-82cb-bbc3c506b4a3",
+                            "checksum": "f4b4b30095b96c434b1ad65d8bf6e182",
+                            "name": "video",
+                            "type": "VIDEO",
+                            "asset_id": "665df93a890bb8abab0bf142",
+                            "element": {
+                                "type": "video",
+                                "path": "https://b2.contentfries.com/uploads-link/t-632487439b9de032c708f306/u-114/0cefc612-03ac-4f18-b6f1-e6fd05186982/inspired-taiwanese-moves-to-mexico-to-deep-dive-mexican-culture-elp-250mp4.mp4?token=Zdj5gyAeZlZwWQY99Tls_tNvNOlF680OWTlQvjzVdjE&expires=1726473017",
+                                "config": {
+                                    "x": -1891,
+                                    "y": 0,
+                                    "width": 3413.76,
+                                    "height": 1920
+                                }
+                            },
+                            "components": [],
+                            "keyframes": [],
+                            "start_at": 6.7,
+                            "end_at": 9.867,
+                            "metadata": {
+                                "starting_time": 648.8330000000001,
+                                "ending_time": 657.9,
+                                "containBlur": false
+                            },
+                            "order": 2
+                        },
+                        {
+                            "id": "d1cb6f8f-3514-402d-8e00-0a7ea7b30668",
+                            "checksum": "10be60470c0918165761b7a431731f36",
+                            "name": "video",
+                            "type": "VIDEO",
+                            "asset_id": "665df93a890bb8abab0bf142",
+                            "element": {
+                                "type": "video",
+                                "path": "https://b2.contentfries.com/uploads-link/t-632487439b9de032c708f306/u-114/0cefc612-03ac-4f18-b6f1-e6fd05186982/inspired-taiwanese-moves-to-mexico-to-deep-dive-mexican-culture-elp-250mp4.mp4?token=Zdj5gyAeZlZwWQY99Tls_tNvNOlF680OWTlQvjzVdjE&expires=1726473017",
+                                "config": {
+                                    "x": -1891,
+                                    "y": 0,
+                                    "width": 3413.76,
+                                    "height": 1920
+                                }
+                            },
+                            "components": [],
+                            "keyframes": [],
+                            "start_at": 9.867,
+                            "end_at": 15.766999999999939,
+                            "metadata": {
+                                "starting_time": 652,
+                                "ending_time": 657.9,
+                                "containBlur": false
+                            },
+                            "order": 3
+                        },
+                        {
+                            "id": "7ca6f7ee-0a89-4766-8d67-c80fecba35cc",
+                            "checksum": "74a32e1ee2f09a5d440d8f4d04358f42",
+                            "name": "video",
+                            "type": "VIDEO",
+                            "asset_id": "665df93a890bb8abab0bf142",
+                            "element": {
+                                "type": "video",
+                                "path": "https://b2.contentfries.com/uploads-link/t-632487439b9de032c708f306/u-114/0cefc612-03ac-4f18-b6f1-e6fd05186982/inspired-taiwanese-moves-to-mexico-to-deep-dive-mexican-culture-elp-250mp4.mp4?token=Zdj5gyAeZlZwWQY99Tls_tNvNOlF680OWTlQvjzVdjE&expires=1726473017",
+                                "config": {
+                                    "x": -1891,
+                                    "y": 0,
+                                    "width": 3413.76,
+                                    "height": 1920
+                                }
+                            },
+                            "components": [],
+                            "keyframes": [],
+                            "start_at": 15.766999999999939,
+                            "end_at": 21,
+                            "metadata": {
+                                "starting_time": 657.9,
+                                "ending_time": 671.967,
+                                "containBlur": false
+                            },
+                            "order": 4
+                        },
+                        {
+                            "id": "3d6e8256-c79f-4637-ac0f-229699852b30",
+                            "checksum": "7458c8517372a15198245b28cd64b3c5",
+                            "name": "video",
+                            "type": "VIDEO",
+                            "asset_id": "665df93a890bb8abab0bf142",
+                            "element": {
+                                "type": "video",
+                                "path": "https://b2.contentfries.com/uploads-link/t-632487439b9de032c708f306/u-114/0cefc612-03ac-4f18-b6f1-e6fd05186982/inspired-taiwanese-moves-to-mexico-to-deep-dive-mexican-culture-elp-250mp4.mp4?token=Zdj5gyAeZlZwWQY99Tls_tNvNOlF680OWTlQvjzVdjE&expires=1726473017",
+                                "config": {
+                                    "x": -1891,
+                                    "y": 0,
+                                    "width": 3413.76,
+                                    "height": 1920
+                                }
+                            },
+                            "components": [],
+                            "keyframes": [],
+                            "start_at": 21,
+                            "end_at": 29.83366666666666,
+                            "metadata": {
+                                "starting_time": 663.133,
+                                "ending_time": 671.967,
+                                "containBlur": false
+                            },
+                            "order": 5
+                        },
+                        {
+                            "id": "4ae5aadd-11e5-454f-975b-9c57d6289662",
+                            "checksum": "22262bece4db0e2f03979c13a3c14532",
+                            "name": "video",
+                            "type": "VIDEO",
+                            "asset_id": "665df93a890bb8abab0bf142",
+                            "element": {
+                                "type": "video",
+                                "path": "https://b2.contentfries.com/uploads-link/t-632487439b9de032c708f306/u-114/0cefc612-03ac-4f18-b6f1-e6fd05186982/inspired-taiwanese-moves-to-mexico-to-deep-dive-mexican-culture-elp-250mp4.mp4?token=Zdj5gyAeZlZwWQY99Tls_tNvNOlF680OWTlQvjzVdjE&expires=1726473017",
+                                "config": {
+                                    "x": -1891,
+                                    "y": 0,
+                                    "width": 3413.76,
+                                    "height": 1920
+                                }
+                            },
+                            "components": [],
+                            "keyframes": [],
+                            "start_at": 29.83366666666666,
+                            "end_at": 36.267,
+                            "metadata": {
+                                "starting_time": 671.967,
+                                "ending_time": 701.067,
+                                "containBlur": false
+                            },
+                            "order": 6
+                        },
+                        {
+                            "id": "85c02fb3-4982-4682-88b5-47e3464c8c73",
+                            "checksum": "a51fbac671073579073a380f9bbf07cf",
+                            "name": "video",
+                            "type": "VIDEO",
+                            "asset_id": "665df93a890bb8abab0bf142",
+                            "element": {
+                                "type": "video",
+                                "path": "https://b2.contentfries.com/uploads-link/t-632487439b9de032c708f306/u-114/0cefc612-03ac-4f18-b6f1-e6fd05186982/inspired-taiwanese-moves-to-mexico-to-deep-dive-mexican-culture-elp-250mp4.mp4?token=Zdj5gyAeZlZwWQY99Tls_tNvNOlF680OWTlQvjzVdjE&expires=1726473017",
+                                "config": {
+                                    "x": -1891,
+                                    "y": 0,
+                                    "width": 3413.76,
+                                    "height": 1920
+                                }
+                            },
+                            "components": [],
+                            "keyframes": [],
+                            "start_at": 36.267,
+                            "end_at": 42.4,
+                            "metadata": {
+                                "starting_time": 678.4003333333334,
+                                "ending_time": 701.067,
+                                "containBlur": false
+                            },
+                            "order": 7
+                        },
+                        {
+                            "id": "7732bf0d-baae-4f7e-93c1-9e3a3293ee8f",
+                            "checksum": "39cfbbcaae8c65be49559a0ed659dea4",
+                            "name": "video",
+                            "type": "VIDEO",
+                            "asset_id": "665df93a890bb8abab0bf142",
+                            "element": {
+                                "type": "video",
+                                "path": "https://b2.contentfries.com/uploads-link/t-632487439b9de032c708f306/u-114/0cefc612-03ac-4f18-b6f1-e6fd05186982/inspired-taiwanese-moves-to-mexico-to-deep-dive-mexican-culture-elp-250mp4.mp4?token=Zdj5gyAeZlZwWQY99Tls_tNvNOlF680OWTlQvjzVdjE&expires=1726473017",
+                                "config": {
+                                    "x": -1891,
+                                    "y": 0,
+                                    "width": 3413.76,
+                                    "height": 1920
+                                }
+                            },
+                            "components": [],
+                            "keyframes": [],
+                            "start_at": 42.4,
+                            "end_at": 48,
+                            "metadata": {
+                                "starting_time": 684.5333333333334,
+                                "ending_time": 701.067,
+                                "containBlur": false
+                            },
+                            "order": 8
+                        },
+                        {
+                            "id": "5d125a3b-4cb8-4a4a-b0a0-7f677587f749",
+                            "checksum": "83f7b5b072c072354bd7a81f1b55aa6b",
+                            "name": "video",
+                            "type": "VIDEO",
+                            "asset_id": "665df93a890bb8abab0bf142",
+                            "element": {
+                                "type": "video",
+                                "path": "https://b2.contentfries.com/uploads-link/t-632487439b9de032c708f306/u-114/0cefc612-03ac-4f18-b6f1-e6fd05186982/inspired-taiwanese-moves-to-mexico-to-deep-dive-mexican-culture-elp-250mp4.mp4?token=Zdj5gyAeZlZwWQY99Tls_tNvNOlF680OWTlQvjzVdjE&expires=1726473017",
+                                "config": {
+                                    "x": -1891,
+                                    "y": 0,
+                                    "width": 3413.76,
+                                    "height": 1920
+                                }
+                            },
+                            "components": [],
+                            "keyframes": [],
+                            "start_at": 48,
+                            "end_at": 53.267,
+                            "metadata": {
+                                "starting_time": 690.1333333333334,
+                                "ending_time": 701.067,
+                                "containBlur": false
+                            },
+                            "order": 9
+                        },
+                        {
+                            "id": "dbb20ad8-d550-4202-8405-f1b317699665",
+                            "checksum": "f0cff68fa679a95c340a329b31b87759",
+                            "name": "video",
+                            "type": "VIDEO",
+                            "asset_id": "665df93a890bb8abab0bf142",
+                            "element": {
+                                "type": "video",
+                                "path": "https://b2.contentfries.com/uploads-link/t-632487439b9de032c708f306/u-114/0cefc612-03ac-4f18-b6f1-e6fd05186982/inspired-taiwanese-moves-to-mexico-to-deep-dive-mexican-culture-elp-250mp4.mp4?token=Zdj5gyAeZlZwWQY99Tls_tNvNOlF680OWTlQvjzVdjE&expires=1726473017",
+                                "config": {
+                                    "x": -1891,
+                                    "y": 0,
+                                    "width": 3413.76,
+                                    "height": 1920
+                                }
+                            },
+                            "components": [],
+                            "keyframes": [],
+                            "start_at": 53.267,
+                            "end_at": 58.93366666666668,
+                            "metadata": {
+                                "starting_time": 695.4003333333335,
+                                "ending_time": 701.067,
+                                "containBlur": false
+                            },
+                            "order": 10
+                        },
+                        {
+                            "id": "1a1d0733-8595-47a4-8be0-7cec05479d20",
+                            "checksum": "b3a0b526cbb5962841b6dada8f4a0272",
+                            "name": "video",
+                            "type": "VIDEO",
+                            "asset_id": "665df93a890bb8abab0bf142",
+                            "element": {
+                                "type": "video",
+                                "path": "https://b2.contentfries.com/uploads-link/t-632487439b9de032c708f306/u-114/0cefc612-03ac-4f18-b6f1-e6fd05186982/inspired-taiwanese-moves-to-mexico-to-deep-dive-mexican-culture-elp-250mp4.mp4?token=Zdj5gyAeZlZwWQY99Tls_tNvNOlF680OWTlQvjzVdjE&expires=1726473017",
+                                "config": {
+                                    "x": -1891,
+                                    "y": 0,
+                                    "width": 3413.76,
+                                    "height": 1920
+                                }
+                            },
+                            "components": [],
+                            "keyframes": [],
+                            "start_at": 58.93366666666668,
+                            "end_at": 65.40033333333326,
+                            "metadata": {
+                                "starting_time": 701.067,
+                                "ending_time": 707.533,
+                                "containBlur": false
+                            },
+                            "order": 11
+                        },
+                        {
+                            "id": "e9ddb2b6-4b32-4796-8374-867d76bda26c",
+                            "checksum": "cf07a5b74d0d845bb6a148d621a4169e",
+                            "name": "video",
+                            "type": "VIDEO",
+                            "asset_id": "665df93a890bb8abab0bf142",
+                            "element": {
+                                "type": "video",
+                                "path": "https://b2.contentfries.com/uploads-link/t-632487439b9de032c708f306/u-114/0cefc612-03ac-4f18-b6f1-e6fd05186982/inspired-taiwanese-moves-to-mexico-to-deep-dive-mexican-culture-elp-250mp4.mp4?token=Zdj5gyAeZlZwWQY99Tls_tNvNOlF680OWTlQvjzVdjE&expires=1726473017",
+                                "config": {
+                                    "x": -1891,
+                                    "y": 0,
+                                    "width": 3413.76,
+                                    "height": 1920
+                                }
+                            },
+                            "components": [],
+                            "keyframes": [],
+                            "start_at": 65.40033333333326,
+                            "end_at": 90.967,
+                            "metadata": {
+                                "starting_time": 707.533,
+                                "ending_time": 733.1,
+                                "containBlur": false
+                            },
+                            "order": 12
+                        }
+                    ],
+                    "width": 1080,
+                    "height": 1920
+                },
+                {
+                    "id": "bb396f01-5260-4ac5-a942-bdbb92c1fb37",
+                    "name": "Layer 2",
+                    "checksum": "21a4797e12bc6bec3ae7f0d2bed6e054",
+                    "order": 2,
+                    "engine": "HTML",
+                    "components": [
+                        {
+                            "id": "65d963fe-eb39-4ce8-abe7-7163fe1d3206",
+                            "checksum": "4bdd000df708d13384fca1538907cf03",
+                            "name": "Subtitles",
+                            "type": "SUBTITLES",
+                            "asset_id": "665df93a890bb8abab0bf142",
+                            "parent_id": "f5912af1-dd87-4be0-b4d8-f38edea008eb",
+                            "element": {
+                                "type": "subtitles",
+                                "config": {
+                                    "x": 20,
+                                    "y": 875,
+                                    "width": 1040,
+                                    "height": 205,
+                                    "color": "rgb(255, 255, 255)",
+                                    "backgroundColor": "rgba(0,0,0,0)",
+                                    "background": "transparent",
+                                    "fontFamily": "Alata",
+                                    "textAlign": "center",
+                                    "textTransform": "none",
+                                    "textShadow": "0px 0px 0em #fff, 0px 0px 0.07142857142857137em #fff, 0px 0px 0.14285714285714274em rgba(33,78,215,1), 0px 0px 0.2142857142857141em rgba(33,78,215,1), 0px 0px 0.2857142857142855em rgba(33,78,215,1), 0px 0px 0.3571428571428569em rgba(33,78,215,1), 0px 0px 0.42857142857142827em rgba(33,78,215,1)",
+                                    "textOutline": "0px 0px 0em #000000",
+                                    "WebkitTextStroke": "null",
+                                    "justifyContent": "center",
+                                    "alignItems": "center",
+                                    "fontSize": "60px"
+                                },
+                                "text": "Captions will render here"
+                            },
+                            "components": [],
+                            "keyframes": [
+                                {
+                                    "id": "0d2f0c4f-308e-458d-963d-6395e7b50b88",
+                                    "name": "Text Animation",
+                                    "type": "animation",
+                                    "animation": {
+                                        "id": "subtitles-rising-back",
+                                        "type": "custom",
+                                        "config": {
+                                            "timings": {
+                                                "enabled": true,
+                                                "type": "words",
+                                                "timings": [
+                                                    0, 0.08, 1.36, 1.68, 4.24,
+                                                    4.8
+                                                ]
+                                            }
+                                        },
+                                        "preset": {
+                                            "id": "subtitles-rising-back",
+                                            "steps": [
+                                                {
+                                                    "method": "css",
+                                                    "target": "element",
+                                                    "params": {
+                                                        "opacity": 0
+                                                    }
+                                                },
+                                                {
+                                                    "method": "fromTo",
+                                                    "params": {
+                                                        "from": {
+                                                            "opacity": 0,
+                                                            "scale": 0
+                                                        },
+                                                        "to": {
+                                                            "ease": "back.out",
+                                                            "opacity": 1,
+                                                            "scale": 1
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ],
+                            "start_at": 0,
+                            "end_at": 90.967,
+                            "metadata": {
+                                "font": {
+                                    "id": "64359e44f7b78b3a230641a2",
+                                    "family": "Alata",
+                                    "category": "sans-serif",
+                                    "variants": ["regular"],
+                                    "subsets": [
+                                        "latin",
+                                        "latin-ext",
+                                        "vietnamese"
+                                    ],
+                                    "source": "google",
+                                    "file_url": null
+                                },
+                                "forceShowContainer": true,
+                                "source": "cf-1-fry",
+                                "transcripts_id": 50094,
+                                "textShadow": {
+                                    "preset": "glow",
+                                    "size": 0.4999999999999996,
+                                    "color": "#214ED7",
+                                    "opacity": 1
+                                },
+                                "highlightColor1": "#FBC42D",
+                                "activeWord": {
+                                    "enabled": true,
+                                    "color": "#3F51B5",
+                                    "backgroundColor": "rgb(255, 255, 255)"
+                                },
+                                "highlightColor2": "#214ED7",
+                                "highlightColor3": "#ED213A",
+                                "rotationRandomizer": {
+                                    "enabled": false,
+                                    "max_rotation": 10,
+                                    "animate": true,
+                                    "rotations": []
+                                },
+                                "animations": false,
+                                "textOutline": {
+                                    "preset": "outline",
+                                    "size": 0,
+                                    "color": "#000000",
+                                    "opacity": 1
+                                }
+                            },
+                            "order": 0
+                        }
+                    ],
+                    "width": 1080,
+                    "height": 1920
+                },
+                {
+                    "id": "41554e9f-1511-44fe-9ac1-1035c8ba4501",
+                    "name": "Layer 3",
+                    "checksum": "9458b197e3b9e1e7b1506200c8c4e66f",
+                    "order": 3,
+                    "engine": "HTML",
+                    "components": [
+                        {
+                            "id": "f6e33733-e090-494c-89bf-6e8ff8db427a",
+                            "checksum": "76f652dc7dccdb2e3277210ad96c71e0",
+                            "name": "Text",
+                            "type": "TEXT",
+                            "element": {
+                                "type": "div",
+                                "config": {
+                                    "x": 0,
+                                    "y": 307,
+                                    "width": 1080,
+                                    "height": 250,
+                                    "color": "rgb(0, 0, 0)",
+                                    "fontFamily": "Roboto",
+                                    "textAlign": "center",
+                                    "textTransform": "uppercase",
+                                    "textOutline": "0px 0px 0em #000000",
+                                    "WebkitTextStroke": "null",
+                                    "justifyContent": "center",
+                                    "alignItems": "center",
+                                    "fontSize": "120px",
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "0.5"
+                                },
+                                "text": "<p>🧠</p>"
+                            },
+                            "components": [],
+                            "keyframes": [],
+                            "start_at": 0,
+                            "end_at": 90.967,
+                            "metadata": {
+                                "textOutline": {
+                                    "preset": "outline",
+                                    "size": 0,
+                                    "color": "#000000",
+                                    "opacity": 1
+                                }
+                            },
+                            "order": 0
+                        }
+                    ],
+                    "width": 1080,
+                    "height": 1920
+                }
+            ],
+            "audios": [],
+            "groups": [],
+            "excluded_timestamps": []
+        },
+        "subtitles": {
+            "665df93a890bb8abab0bf142": [
+                {
+                    "id": "3709a2ce-886d-43c7-99cb-cd54db949d93",
+                    "start_at": 0.017,
+                    "end_at": 1.601,
+                    "text": "It's so much",
+                    "words": [
+                        {
+                            "id": "faa6e71f-db5c-4d9a-8b8a-dbe43c5956d8",
+                            "start_at": 0.017,
+                            "end_at": 0.201,
+                            "text": "It's",
+                            "position": 1
+                        },
+                        {
+                            "id": "f87f7e35-c715-43ea-9dcb-6f198b8770a8",
+                            "start_at": 0.241,
+                            "end_at": 0.777,
+                            "text": "so",
+                            "position": 2
+                        },
+                        {
+                            "id": "d52392aa-ebd0-4181-acff-3e8fbaca739d",
+                            "start_at": 0.929,
+                            "end_at": 1.481,
+                            "text": "much",
+                            "position": 3
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "3e170348-645f-4be7-bb47-65c8688b1761",
+                    "start_at": 1.601,
+                    "end_at": 2.377,
+                    "text": "stuff you need to",
+                    "words": [
+                        {
+                            "id": "7bfc3af7-dd10-4e2b-8f10-8319ff60e413",
+                            "start_at": 1.601,
+                            "end_at": 1.921,
+                            "text": "stuff",
+                            "position": 4
+                        },
+                        {
+                            "id": "3f8ab2cd-dd0a-4514-be2c-754c8712bdc1",
+                            "start_at": 1.961,
+                            "end_at": 2.089,
+                            "text": "you",
+                            "position": 5
+                        },
+                        {
+                            "id": "c867f9f8-eee0-44d2-b8c3-ed73f9e01bf0",
+                            "start_at": 2.105,
+                            "end_at": 2.209,
+                            "text": "need",
+                            "position": 6
+                        },
+                        {
+                            "id": "b32f977e-f23f-4049-8352-2918ce50fd23",
+                            "start_at": 2.225,
+                            "end_at": 2.353,
+                            "text": "to",
+                            "position": 7
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "60fae912-9c33-43c5-8476-57a5d4f3bb04",
+                    "start_at": 2.377,
+                    "end_at": 2.633,
+                    "text": "do.",
+                    "words": [
+                        {
+                            "id": "79092913-c3f9-4767-95bc-07eb9ec1cec0",
+                            "start_at": 2.377,
+                            "end_at": 2.585,
+                            "text": "do.",
+                            "position": 8
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "dbee1ef0-616c-433e-ae20-f983efbd9dd8",
+                    "start_at": 2.633,
+                    "end_at": 3.081,
+                    "text": "Yes.",
+                    "words": [
+                        {
+                            "id": "6eacea48-bfc1-4904-9f03-6a3cbbbaf4b6",
+                            "start_at": 2.633,
+                            "end_at": 3.001,
+                            "text": "Yes.",
+                            "position": 9
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "fdcdcdf5-eaf6-47fe-a6b9-9054f7d627aa",
+                    "start_at": 3.081,
+                    "end_at": 3.701,
+                    "text": "Now.",
+                    "words": [
+                        {
+                            "id": "db31b6a0-2687-43b7-9353-cfba726025ae",
+                            "start_at": 3.081,
+                            "end_at": 3.701,
+                            "text": "Now.",
+                            "position": 10
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "f3da2372-02d0-4a88-8317-4296138ba895",
+                    "start_at": 4.921,
+                    "end_at": 5.489,
+                    "text": "Yeah.",
+                    "words": [
+                        {
+                            "id": "aea565b6-fc02-4dba-b664-fc3458f7d7aa",
+                            "start_at": 4.921,
+                            "end_at": 5.417,
+                            "text": "Yeah.",
+                            "position": 11
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "c6879db7-861a-4cb3-8094-0bb00ae03f34",
+                    "start_at": 5.489,
+                    "end_at": 6.209,
+                    "text": "You.",
+                    "words": [
+                        {
+                            "id": "b67a001b-484b-4e49-8bd5-4856bc2ae04a",
+                            "start_at": 5.489,
+                            "end_at": 6.057,
+                            "text": "You.",
+                            "position": 12
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "c938d18b-d1fc-4820-a724-79b6f5683cdd",
+                    "start_at": 6.209,
+                    "end_at": 7.081,
+                    "text": "Sometimes I'll",
+                    "words": [
+                        {
+                            "id": "b7b95a8d-ddb2-43b1-96d0-ffe7af9e2062",
+                            "start_at": 6.209,
+                            "end_at": 6.737,
+                            "text": "Sometimes",
+                            "position": 13
+                        },
+                        {
+                            "id": "a26ec1b1-4167-4413-85b0-16db7b546b84",
+                            "start_at": 6.769,
+                            "end_at": 7.041,
+                            "text": "I'll",
+                            "position": 14
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "f510d6d0-24ee-4f53-99c0-61fc74cee2fb",
+                    "start_at": 7.081,
+                    "end_at": 9.545,
+                    "text": "have to like a lot",
+                    "words": [
+                        {
+                            "id": "2b00fefd-5b19-4e71-b163-1ab7697a6634",
+                            "start_at": 7.081,
+                            "end_at": 7.257,
+                            "text": "have",
+                            "position": 15
+                        },
+                        {
+                            "id": "5642f65d-149a-4cad-9aff-f3c1ee573443",
+                            "start_at": 7.289,
+                            "end_at": 7.861,
+                            "text": "to",
+                            "position": 16
+                        },
+                        {
+                            "id": "2d563100-d0b8-48c6-91e6-dbc58f1d81c6",
+                            "start_at": 8.881,
+                            "end_at": 9.217,
+                            "text": "like",
+                            "position": 17
+                        },
+                        {
+                            "id": "d6655dff-529d-4b61-8077-a4549c5d8ff0",
+                            "start_at": 9.249,
+                            "end_at": 9.393,
+                            "text": "a",
+                            "position": 18
+                        },
+                        {
+                            "id": "40431491-a4ef-4fe1-81a1-be5050dc1834",
+                            "start_at": 9.417,
+                            "end_at": 9.529,
+                            "text": "lot",
+                            "position": 19
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "589c762b-3a93-41e2-a720-713a97002a10",
+                    "start_at": 9.545,
+                    "end_at": 10.561,
+                    "text": "of things I don't",
+                    "words": [
+                        {
+                            "id": "71648f89-4912-459f-bc26-f4e50f99a176",
+                            "start_at": 9.545,
+                            "end_at": 9.697,
+                            "text": "of",
+                            "position": 20
+                        },
+                        {
+                            "id": "016d6d52-22dd-424f-87a3-662dbc957ccf",
+                            "start_at": 9.729,
+                            "end_at": 9.921,
+                            "text": "things",
+                            "position": 21
+                        },
+                        {
+                            "id": "24c3a9a2-f5cb-4982-b36c-d5d2780fc702",
+                            "start_at": 9.961,
+                            "end_at": 10.209,
+                            "text": "I",
+                            "position": 22
+                        },
+                        {
+                            "id": "f39c2f07-9d80-4234-872c-f56198359817",
+                            "start_at": 10.265,
+                            "end_at": 10.521,
+                            "text": "don't",
+                            "position": 23
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "cba92784-cca5-4a7d-a786-93746c5a1f6a",
+                    "start_at": 10.561,
+                    "end_at": 12.321,
+                    "text": "want to do, but if",
+                    "words": [
+                        {
+                            "id": "8c23594c-17a6-4690-a608-6d05084322d8",
+                            "start_at": 10.561,
+                            "end_at": 10.689,
+                            "text": "want",
+                            "position": 24
+                        },
+                        {
+                            "id": "46b201cf-1167-48bd-b8b9-6c12627f5acb",
+                            "start_at": 10.705,
+                            "end_at": 10.833,
+                            "text": "to",
+                            "position": 25
+                        },
+                        {
+                            "id": "63ae166e-3a69-44c5-a143-5fd7d826f3d8",
+                            "start_at": 10.857,
+                            "end_at": 11.425,
+                            "text": "do,",
+                            "position": 26
+                        },
+                        {
+                            "id": "8d7b2a9f-3070-467c-bdf2-f3714a41be1a",
+                            "start_at": 11.593,
+                            "end_at": 11.993,
+                            "text": "but",
+                            "position": 27
+                        },
+                        {
+                            "id": "3f1496f0-2a2d-45f4-9391-7f2fd59bf422",
+                            "start_at": 12.057,
+                            "end_at": 12.281,
+                            "text": "if",
+                            "position": 28
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "cc9afe7c-8a9e-4639-8fc7-2b1dd053ba80",
+                    "start_at": 12.321,
+                    "end_at": 13.901,
+                    "text": "I keep avoiding",
+                    "words": [
+                        {
+                            "id": "92ac98a0-3659-4d2a-92c0-e144a3d87b5d",
+                            "start_at": 12.321,
+                            "end_at": 12.545,
+                            "text": "I",
+                            "position": 29
+                        },
+                        {
+                            "id": "d9ebd29d-fec1-47cd-b8b2-4117cf3cfe3d",
+                            "start_at": 12.593,
+                            "end_at": 12.873,
+                            "text": "keep",
+                            "position": 30
+                        },
+                        {
+                            "id": "ab75d2d3-7d4b-4334-83be-1133c20f5bd4",
+                            "start_at": 12.937,
+                            "end_at": 13.901,
+                            "text": "avoiding",
+                            "position": 31
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "256d7e27-34d7-42c1-8a84-2055911f65af",
+                    "start_at": 14.801,
+                    "end_at": 16.097,
+                    "text": "all those little",
+                    "words": [
+                        {
+                            "id": "9e41dd90-64f9-40a4-add4-1601a274cd14",
+                            "start_at": 14.801,
+                            "end_at": 15.137,
+                            "text": "all",
+                            "position": 32
+                        },
+                        {
+                            "id": "2f7aab62-af53-416d-ae77-321d4ddf50e4",
+                            "start_at": 15.169,
+                            "end_at": 15.481,
+                            "text": "those",
+                            "position": 33
+                        },
+                        {
+                            "id": "48bc1fb0-6dfb-4a9a-89e7-b3a355122cd0",
+                            "start_at": 15.561,
+                            "end_at": 15.993,
+                            "text": "little",
+                            "position": 34
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "33638991-e050-4995-8437-c4998a828bfa",
+                    "start_at": 16.097,
+                    "end_at": 16.929,
+                    "text": "problems, it's",
+                    "words": [
+                        {
+                            "id": "7a03b321-283b-465b-9507-3708c2f87a19",
+                            "start_at": 16.097,
+                            "end_at": 16.681,
+                            "text": "problems,",
+                            "position": 35
+                        },
+                        {
+                            "id": "c86305bd-59e0-4ac1-8536-1520de60be1b",
+                            "start_at": 16.721,
+                            "end_at": 16.897,
+                            "text": "it's",
+                            "position": 36
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "abdabfa8-aa31-403b-a1ae-6d3dc681a588",
+                    "start_at": 16.929,
+                    "end_at": 17.753,
+                    "text": "gonna be a big",
+                    "words": [
+                        {
+                            "id": "b4e34462-992f-4401-a9e1-4758df313ccb",
+                            "start_at": 16.929,
+                            "end_at": 17.137,
+                            "text": "gonna",
+                            "position": 37
+                        },
+                        {
+                            "id": "7700988e-90fb-4c95-bd28-b6bb9ad20148",
+                            "start_at": 17.169,
+                            "end_at": 17.289,
+                            "text": "be",
+                            "position": 38
+                        },
+                        {
+                            "id": "b5498707-8e42-47cc-990a-71f4c96c0380",
+                            "start_at": 17.305,
+                            "end_at": 17.457,
+                            "text": "a",
+                            "position": 39
+                        },
+                        {
+                            "id": "143da71b-9fbb-42fc-a52f-b9a81e21a83c",
+                            "start_at": 17.489,
+                            "end_at": 17.705,
+                            "text": "big",
+                            "position": 40
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "cf70d64c-a8f7-4eb8-9751-cd00193da290",
+                    "start_at": 17.753,
+                    "end_at": 18.577,
+                    "text": "thing, and it's",
+                    "words": [
+                        {
+                            "id": "477ee24d-84f6-4b61-b9ec-89c5bd5242a7",
+                            "start_at": 17.753,
+                            "end_at": 18.009,
+                            "text": "thing,",
+                            "position": 41
+                        },
+                        {
+                            "id": "7b9ce4e6-9aa4-4a8b-9069-a06502018f19",
+                            "start_at": 18.065,
+                            "end_at": 18.305,
+                            "text": "and",
+                            "position": 42
+                        },
+                        {
+                            "id": "4875e964-eeb5-4b63-b407-fc58bfa40223",
+                            "start_at": 18.353,
+                            "end_at": 18.553,
+                            "text": "it's",
+                            "position": 43
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "b38517b2-0594-448a-81bb-2366634e10f0",
+                    "start_at": 18.577,
+                    "end_at": 19.521,
+                    "text": "gonna blow.",
+                    "words": [
+                        {
+                            "id": "2162d645-1001-4bab-a77f-2fc6edc93741",
+                            "start_at": 18.577,
+                            "end_at": 19.065,
+                            "text": "gonna",
+                            "position": 44
+                        },
+                        {
+                            "id": "ddd316d6-7c6e-4611-bb77-888cf9b6f37a",
+                            "start_at": 19.193,
+                            "end_at": 19.481,
+                            "text": "blow.",
+                            "position": 45
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "26b3dc2a-e7d0-44d8-9b51-041fdd88509a",
+                    "start_at": 19.521,
+                    "end_at": 20.657,
+                    "text": "I'm in my face.",
+                    "words": [
+                        {
+                            "id": "6165caab-3a5d-4a0d-9d94-3ef3af0771b0",
+                            "start_at": 19.521,
+                            "end_at": 19.689,
+                            "text": "I'm",
+                            "position": 46
+                        },
+                        {
+                            "id": "bbb3bf49-2429-429d-90ac-af3d2a9489b8",
+                            "start_at": 19.705,
+                            "end_at": 19.833,
+                            "text": "in",
+                            "position": 47
+                        },
+                        {
+                            "id": "b8e0db8c-b78e-4dea-8692-e0789d29980c",
+                            "start_at": 19.857,
+                            "end_at": 20.089,
+                            "text": "my",
+                            "position": 48
+                        },
+                        {
+                            "id": "0962d72a-ff31-4239-9161-8416b85188e6",
+                            "start_at": 20.145,
+                            "end_at": 20.553,
+                            "text": "face.",
+                            "position": 49
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "78b17b1f-a6f2-45f4-969f-d996cd636b17",
+                    "start_at": 20.657,
+                    "end_at": 21.381,
+                    "text": "Yes.",
+                    "words": [
+                        {
+                            "id": "2817336e-cc28-4375-b8be-c9e6743f9ef2",
+                            "start_at": 20.657,
+                            "end_at": 21.381,
+                            "text": "Yes.",
+                            "position": 50
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "ad2f0508-194b-449c-8e98-936764589f49",
+                    "start_at": 21.801,
+                    "end_at": 22.233,
+                    "text": "Least",
+                    "words": [
+                        {
+                            "id": "b3e1c64d-50a0-4d87-94e9-99b64b8622b6",
+                            "start_at": 21.801,
+                            "end_at": 22.185,
+                            "text": "Least",
+                            "position": 51
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "6e578381-cda0-42d7-b672-999b12d29051",
+                    "start_at": 22.233,
+                    "end_at": 22.873,
+                    "text": "expectant",
+                    "words": [
+                        {
+                            "id": "8c88cc0f-7588-47e3-a7e7-c81fab8f2c51",
+                            "start_at": 22.233,
+                            "end_at": 22.825,
+                            "text": "expectant",
+                            "position": 52
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "5e8ae101-f54a-4f67-bd3d-260ec72c2544",
+                    "start_at": 22.873,
+                    "end_at": 23.657,
+                    "text": "moments.",
+                    "words": [
+                        {
+                            "id": "28e4c6aa-d2a3-4789-95ad-ff4b6519fa44",
+                            "start_at": 22.873,
+                            "end_at": 23.513,
+                            "text": "moments.",
+                            "position": 53
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "f9820dbf-e84c-43b3-bc4d-37394af02f2b",
+                    "start_at": 23.657,
+                    "end_at": 25.033,
+                    "text": "So, yeah, those are",
+                    "words": [
+                        {
+                            "id": "5a737bfd-0ca1-4b2f-82a5-c5a97bbc3a60",
+                            "start_at": 23.657,
+                            "end_at": 24.249,
+                            "text": "So,",
+                            "position": 54
+                        },
+                        {
+                            "id": "64a778cb-b961-42d0-8e0d-4267b40b8794",
+                            "start_at": 24.385,
+                            "end_at": 24.697,
+                            "text": "yeah,",
+                            "position": 55
+                        },
+                        {
+                            "id": "374dec95-71eb-439d-abb0-3fb603625eb3",
+                            "start_at": 24.729,
+                            "end_at": 24.897,
+                            "text": "those",
+                            "position": 56
+                        },
+                        {
+                            "id": "bd388a19-a413-4f8d-85a9-337e27bec693",
+                            "start_at": 24.929,
+                            "end_at": 25.025,
+                            "text": "are",
+                            "position": 57
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "6020047d-a061-4537-b2ac-16cfbeee5955",
+                    "start_at": 25.033,
+                    "end_at": 25.665,
+                    "text": "the things you have",
+                    "words": [
+                        {
+                            "id": "5f6919e4-9f35-4016-9c68-afd047cf61cd",
+                            "start_at": 25.033,
+                            "end_at": 25.129,
+                            "text": "the",
+                            "position": 58
+                        },
+                        {
+                            "id": "da1da36b-5b98-4491-93d7-92251e1dc83c",
+                            "start_at": 25.145,
+                            "end_at": 25.297,
+                            "text": "things",
+                            "position": 59
+                        },
+                        {
+                            "id": "ec6baf90-be41-4c2e-8507-5a87ab0aca02",
+                            "start_at": 25.329,
+                            "end_at": 25.497,
+                            "text": "you",
+                            "position": 60
+                        },
+                        {
+                            "id": "b31ee55c-5dee-4fba-a453-7bfb35e50444",
+                            "start_at": 25.529,
+                            "end_at": 25.649,
+                            "text": "have",
+                            "position": 61
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "319aadb0-0f64-42a2-974d-ab3fa543605c",
+                    "start_at": 25.665,
+                    "end_at": 26.953,
+                    "text": "to, like, face.",
+                    "words": [
+                        {
+                            "id": "3f7c471d-8dc8-4f94-8b30-b3fd6376c6f9",
+                            "start_at": 25.665,
+                            "end_at": 26.009,
+                            "text": "to,",
+                            "position": 62
+                        },
+                        {
+                            "id": "f8654a43-da11-48a4-a468-131b6a682e76",
+                            "start_at": 26.105,
+                            "end_at": 26.433,
+                            "text": "like,",
+                            "position": 63
+                        },
+                        {
+                            "id": "5e0379f3-4829-4d05-b96e-4ecf29d14fba",
+                            "start_at": 26.497,
+                            "end_at": 26.865,
+                            "text": "face.",
+                            "position": 64
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "32eb294c-7192-4071-896b-bd2569f08ff1",
+                    "start_at": 26.953,
+                    "end_at": 28.785,
+                    "text": "And then it's hard.",
+                    "words": [
+                        {
+                            "id": "524659e8-f151-4850-a77d-6141e50e8653",
+                            "start_at": 26.953,
+                            "end_at": 27.129,
+                            "text": "And",
+                            "position": 65
+                        },
+                        {
+                            "id": "3c5eb776-3f23-4eeb-a228-0659c44ffb71",
+                            "start_at": 27.145,
+                            "end_at": 27.753,
+                            "text": "then",
+                            "position": 66
+                        },
+                        {
+                            "id": "349ab2ed-a71b-4ff1-89c7-33089b0ee057",
+                            "start_at": 27.937,
+                            "end_at": 28.297,
+                            "text": "it's",
+                            "position": 67
+                        },
+                        {
+                            "id": "cdf7e651-9482-4994-b355-1610e8c4793f",
+                            "start_at": 28.329,
+                            "end_at": 28.689,
+                            "text": "hard.",
+                            "position": 68
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "f15f5322-3774-4784-8ceb-53ab739540b3",
+                    "start_at": 28.785,
+                    "end_at": 29.457,
+                    "text": "Yeah.",
+                    "words": [
+                        {
+                            "id": "ab6fd4f9-5265-49ce-a30d-b1889578738b",
+                            "start_at": 28.785,
+                            "end_at": 29.333,
+                            "text": "Yeah.",
+                            "position": 69
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "1abc550a-8a29-4e75-98a9-aa17e3361821",
+                    "start_at": 29.457,
+                    "end_at": 30.165,
+                    "text": "Sometimes you want",
+                    "words": [
+                        {
+                            "id": "fb64c5ef-a774-4b1f-8d09-6dab468eb849",
+                            "start_at": 29.457,
+                            "end_at": 29.893,
+                            "text": "Sometimes",
+                            "position": 70
+                        },
+                        {
+                            "id": "45cf77f5-19c6-46c9-a492-c7de30d93afd",
+                            "start_at": 29.917,
+                            "end_at": 30.029,
+                            "text": "you",
+                            "position": 71
+                        },
+                        {
+                            "id": "3a8e6403-f33c-4b20-a742-e87033176784",
+                            "start_at": 30.045,
+                            "end_at": 30.149,
+                            "text": "want",
+                            "position": 72
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "fdb7a7c7-492d-4fcf-9937-e3bf04ac3dbb",
+                    "start_at": 30.165,
+                    "end_at": 30.765,
+                    "text": "to, you know, you",
+                    "words": [
+                        {
+                            "id": "abafebea-bbf8-4ce4-90bc-02a2f02ef3bf",
+                            "start_at": 30.165,
+                            "end_at": 30.317,
+                            "text": "to,",
+                            "position": 73
+                        },
+                        {
+                            "id": "9c12e278-85ac-4efc-93c1-7c6e7d4ee66a",
+                            "start_at": 30.349,
+                            "end_at": 30.469,
+                            "text": "you",
+                            "position": 74
+                        },
+                        {
+                            "id": "13d680c8-5bf7-491e-a990-4b67f93421ce",
+                            "start_at": 30.485,
+                            "end_at": 30.613,
+                            "text": "know,",
+                            "position": 75
+                        },
+                        {
+                            "id": "1409a3b9-6e01-4607-8095-8c49291e4c03",
+                            "start_at": 30.637,
+                            "end_at": 30.749,
+                            "text": "you",
+                            "position": 76
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "ae06bd58-6057-41e0-ab55-b63cf9298e95",
+                    "start_at": 30.765,
+                    "end_at": 31.757,
+                    "text": "have a day planned",
+                    "words": [
+                        {
+                            "id": "ff024e92-3178-4d5a-8614-3be13ec193e1",
+                            "start_at": 30.765,
+                            "end_at": 30.869,
+                            "text": "have",
+                            "position": 77
+                        },
+                        {
+                            "id": "98f11573-2da4-41ae-a952-8868fddb9ab6",
+                            "start_at": 30.885,
+                            "end_at": 31.037,
+                            "text": "a",
+                            "position": 78
+                        },
+                        {
+                            "id": "99b164b5-daaf-43c6-ac07-7d99d581aaf1",
+                            "start_at": 31.069,
+                            "end_at": 31.285,
+                            "text": "day",
+                            "position": 79
+                        },
+                        {
+                            "id": "ec406b53-269d-4b1a-b746-ba18115b3099",
+                            "start_at": 31.333,
+                            "end_at": 31.733,
+                            "text": "planned",
+                            "position": 80
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "d7b47fbd-51ad-4968-bd72-1c4be7df3ee7",
+                    "start_at": 31.757,
+                    "end_at": 32.557,
+                    "text": "or whatever, and",
+                    "words": [
+                        {
+                            "id": "16e16226-c6d2-4b38-b58f-a61cb48bf66b",
+                            "start_at": 31.757,
+                            "end_at": 31.893,
+                            "text": "or",
+                            "position": 81
+                        },
+                        {
+                            "id": "56744a78-e5b2-417e-b11b-cf3f636d6c20",
+                            "start_at": 31.917,
+                            "end_at": 32.293,
+                            "text": "whatever,",
+                            "position": 82
+                        },
+                        {
+                            "id": "a8fd114f-d3ef-41b8-bd3c-9ccc87675360",
+                            "start_at": 32.357,
+                            "end_at": 32.533,
+                            "text": "and",
+                            "position": 83
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "2f89681a-c08a-479b-84a1-63c539a32bd0",
+                    "start_at": 32.557,
+                    "end_at": 33.709,
+                    "text": "then one of your",
+                    "words": [
+                        {
+                            "id": "a27c8dee-440d-43db-9e9b-99c09362f4df",
+                            "start_at": 32.557,
+                            "end_at": 33.053,
+                            "text": "then",
+                            "position": 84
+                        },
+                        {
+                            "id": "cb32d027-451a-46d2-a26e-767a0be47a16",
+                            "start_at": 33.197,
+                            "end_at": 33.429,
+                            "text": "one",
+                            "position": 85
+                        },
+                        {
+                            "id": "e3d2520d-c8a6-42ee-997e-5faf935ae59d",
+                            "start_at": 33.445,
+                            "end_at": 33.525,
+                            "text": "of",
+                            "position": 86
+                        },
+                        {
+                            "id": "93209d01-f5dd-4356-8ac7-4a36c6202805",
+                            "start_at": 33.533,
+                            "end_at": 33.677,
+                            "text": "your",
+                            "position": 87
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "4ecf4039-e81e-4c45-8944-b342aa1fc3e0",
+                    "start_at": 33.709,
+                    "end_at": 34.493,
+                    "text": "staff says, oh, I",
+                    "words": [
+                        {
+                            "id": "1f2075b9-8090-46ef-a24d-f82597bc80c3",
+                            "start_at": 33.709,
+                            "end_at": 33.925,
+                            "text": "staff",
+                            "position": 88
+                        },
+                        {
+                            "id": "4b71f730-54c0-459e-997d-4519040bacdd",
+                            "start_at": 33.973,
+                            "end_at": 34.205,
+                            "text": "says,",
+                            "position": 89
+                        },
+                        {
+                            "id": "80d1ae8b-1f2c-4860-a564-aa571c8b2942",
+                            "start_at": 34.253,
+                            "end_at": 34.389,
+                            "text": "oh,",
+                            "position": 90
+                        },
+                        {
+                            "id": "8fa151af-d4d8-49c4-95fa-ab097c42cbb0",
+                            "start_at": 34.405,
+                            "end_at": 34.485,
+                            "text": "I",
+                            "position": 91
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "73a97ff4-cb39-4889-baea-d5410ffd9bca",
+                    "start_at": 34.493,
+                    "end_at": 35.085,
+                    "text": "need to talk to",
+                    "words": [
+                        {
+                            "id": "2d8d755b-5413-46f2-8e8d-a9feda3b54ef",
+                            "start_at": 34.493,
+                            "end_at": 34.613,
+                            "text": "need",
+                            "position": 92
+                        },
+                        {
+                            "id": "2c0f5624-6550-447c-b25b-01e73330e044",
+                            "start_at": 34.637,
+                            "end_at": 34.749,
+                            "text": "to",
+                            "position": 93
+                        },
+                        {
+                            "id": "4e312639-59a4-4451-94e8-a022df27a418",
+                            "start_at": 34.765,
+                            "end_at": 34.917,
+                            "text": "talk",
+                            "position": 94
+                        },
+                        {
+                            "id": "6de3dbf0-b484-4ca7-984c-087b626bf9b8",
+                            "start_at": 34.949,
+                            "end_at": 35.069,
+                            "text": "to",
+                            "position": 95
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "1853d33e-dfc2-4c1d-9225-70caa062c26a",
+                    "start_at": 35.085,
+                    "end_at": 35.237,
+                    "text": "you.",
+                    "words": [
+                        {
+                            "id": "b4ecf4f6-1b5c-455a-88a9-8e9e255bfb06",
+                            "start_at": 35.085,
+                            "end_at": 35.213,
+                            "text": "you.",
+                            "position": 96
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "7cdb300d-3e8d-4726-a344-adfb691dd030",
+                    "start_at": 35.237,
+                    "end_at": 35.597,
+                    "text": "And I'm like,",
+                    "words": [
+                        {
+                            "id": "a39dbc56-c6b7-4f2d-aab3-02c840568c3b",
+                            "start_at": 35.237,
+                            "end_at": 35.325,
+                            "text": "And",
+                            "position": 97
+                        },
+                        {
+                            "id": "ad47c7e9-1831-41cc-8e7b-4630a1264b0b",
+                            "start_at": 35.333,
+                            "end_at": 35.429,
+                            "text": "I'm",
+                            "position": 98
+                        },
+                        {
+                            "id": "503cba4a-681f-45f6-923c-f2833ac0f39a",
+                            "start_at": 35.445,
+                            "end_at": 35.573,
+                            "text": "like,",
+                            "position": 99
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "032673dd-6efb-4866-adaa-91b921897ca5",
+                    "start_at": 35.597,
+                    "end_at": 36.109,
+                    "text": "okay, what's",
+                    "words": [
+                        {
+                            "id": "b33eae2c-6caf-4210-893f-e367a2c9fc78",
+                            "start_at": 35.597,
+                            "end_at": 35.837,
+                            "text": "okay,",
+                            "position": 100
+                        },
+                        {
+                            "id": "7594e181-0da1-4a72-896c-dc6c5d9db675",
+                            "start_at": 35.869,
+                            "end_at": 36.077,
+                            "text": "what's",
+                            "position": 101
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "932ffeaf-8e6c-4a92-93e8-e1f975ca55a5",
+                    "start_at": 36.109,
+                    "end_at": 36.277,
+                    "text": "up?",
+                    "words": [
+                        {
+                            "id": "baf6619c-71ad-4d75-bd60-fd415dfe9f0e",
+                            "start_at": 36.109,
+                            "end_at": 36.253,
+                            "text": "up?",
+                            "position": 102
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "ad8b762c-1027-42dc-bf7c-1c2bae7e9a1a",
+                    "start_at": 36.277,
+                    "end_at": 37.597,
+                    "text": "And then, you",
+                    "words": [
+                        {
+                            "id": "6ef24de9-d11d-4e67-a161-6a520761f94a",
+                            "start_at": 36.277,
+                            "end_at": 36.365,
+                            "text": "And",
+                            "position": 103
+                        },
+                        {
+                            "id": "e1b3d889-c418-4bb2-b9b2-f25fe14ebe1b",
+                            "start_at": 36.373,
+                            "end_at": 36.921,
+                            "text": "then,",
+                            "position": 104
+                        },
+                        {
+                            "id": "a49a2336-00df-457d-ba25-007d41144fe6",
+                            "start_at": 37.261,
+                            "end_at": 37.573,
+                            "text": "you",
+                            "position": 105
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "b2bb058e-6658-4c62-9df7-a08761d781ed",
+                    "start_at": 37.597,
+                    "end_at": 38.309,
+                    "text": "know, I'm",
+                    "words": [
+                        {
+                            "id": "2bd62046-0d79-467e-ae93-d5bf8ec73a07",
+                            "start_at": 37.597,
+                            "end_at": 37.949,
+                            "text": "know,",
+                            "position": 106
+                        },
+                        {
+                            "id": "79a4df47-02d9-411d-9d7b-7dd61c95dbbc",
+                            "start_at": 38.045,
+                            "end_at": 38.277,
+                            "text": "I'm",
+                            "position": 107
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "b3886b6c-cfa5-4ddd-8d44-9a9c9d073235",
+                    "start_at": 38.309,
+                    "end_at": 38.933,
+                    "text": "quitting.",
+                    "words": [
+                        {
+                            "id": "e95bbc1c-63d1-45b0-8b90-53da68985e54",
+                            "start_at": 38.309,
+                            "end_at": 38.845,
+                            "text": "quitting.",
+                            "position": 108
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "1ec6a123-a08b-43d9-b01a-98162bafabd1",
+                    "start_at": 38.933,
+                    "end_at": 39.693,
+                    "text": "You know, why",
+                    "words": [
+                        {
+                            "id": "c59e38ec-7576-49db-b5dd-e46f4e3abfb2",
+                            "start_at": 38.933,
+                            "end_at": 39.109,
+                            "text": "You",
+                            "position": 109
+                        },
+                        {
+                            "id": "44229f4a-5019-4e47-b6a4-f632dc25ab45",
+                            "start_at": 39.125,
+                            "end_at": 39.445,
+                            "text": "know,",
+                            "position": 110
+                        },
+                        {
+                            "id": "42461ce9-b314-493c-b97f-0bf0369909b7",
+                            "start_at": 39.533,
+                            "end_at": 39.685,
+                            "text": "why",
+                            "position": 111
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "e4dc6a49-bd5f-4456-ac07-e15c20c4a8e5",
+                    "start_at": 39.693,
+                    "end_at": 39.917,
+                    "text": "are you",
+                    "words": [
+                        {
+                            "id": "ec909fa1-b621-40f0-833e-d3213c9dcdcf",
+                            "start_at": 39.693,
+                            "end_at": 39.765,
+                            "text": "are",
+                            "position": 112
+                        },
+                        {
+                            "id": "e734c87b-1706-4584-a8b8-debb3ff6670f",
+                            "start_at": 39.773,
+                            "end_at": 39.893,
+                            "text": "you",
+                            "position": 113
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "eca2cc3c-8624-48e9-9ac2-35d0abf3f566",
+                    "start_at": 39.917,
+                    "end_at": 40.229,
+                    "text": "quitting?",
+                    "words": [
+                        {
+                            "id": "85219285-faac-4e45-8bcd-6db103029b6d",
+                            "start_at": 39.917,
+                            "end_at": 40.197,
+                            "text": "quitting?",
+                            "position": 114
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "23b493cb-60e7-436f-8c9d-2ccb45507ced",
+                    "start_at": 40.229,
+                    "end_at": 40.645,
+                    "text": "You know, you're",
+                    "words": [
+                        {
+                            "id": "ec86b0c4-4a9b-4e01-bf4f-fe22102a2e28",
+                            "start_at": 40.229,
+                            "end_at": 40.349,
+                            "text": "You",
+                            "position": 115
+                        },
+                        {
+                            "id": "9953b76a-e240-4aa2-ac8d-de9b4e5b43ac",
+                            "start_at": 40.365,
+                            "end_at": 40.493,
+                            "text": "know,",
+                            "position": 116
+                        },
+                        {
+                            "id": "fcf495db-a862-425e-9b6f-3524175b9da2",
+                            "start_at": 40.517,
+                            "end_at": 40.629,
+                            "text": "you're",
+                            "position": 117
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "19893b1c-a0fb-4f01-bedf-9086c6f06659",
+                    "start_at": 40.645,
+                    "end_at": 41.477,
+                    "text": "doing well, because",
+                    "words": [
+                        {
+                            "id": "7e7f8568-0c3a-4c75-9f48-1bbab2a273c9",
+                            "start_at": 40.645,
+                            "end_at": 40.797,
+                            "text": "doing",
+                            "position": 118
+                        },
+                        {
+                            "id": "5514277d-09f1-4dea-a23a-7509b4d69708",
+                            "start_at": 40.829,
+                            "end_at": 41.069,
+                            "text": "well,",
+                            "position": 119
+                        },
+                        {
+                            "id": "1670cf24-7eb3-4130-b7c6-bb42443beee6",
+                            "start_at": 41.125,
+                            "end_at": 41.413,
+                            "text": "because",
+                            "position": 120
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "9a4b6aec-6ef0-4548-b759-4ccd53e319f9",
+                    "start_at": 41.477,
+                    "end_at": 42.397,
+                    "text": "this guy and this",
+                    "words": [
+                        {
+                            "id": "d4080f93-a5bf-4cff-87ea-6cf3cd86daa0",
+                            "start_at": 41.477,
+                            "end_at": 41.701,
+                            "text": "this",
+                            "position": 121
+                        },
+                        {
+                            "id": "8865b51d-16a3-4b19-9632-e804ab62f9f3",
+                            "start_at": 41.741,
+                            "end_at": 42.005,
+                            "text": "guy",
+                            "position": 122
+                        },
+                        {
+                            "id": "e158f597-2d54-42eb-92a8-79b093f31f63",
+                            "start_at": 42.053,
+                            "end_at": 42.213,
+                            "text": "and",
+                            "position": 123
+                        },
+                        {
+                            "id": "9dc8a1d8-f6aa-43dc-a129-490376eb654e",
+                            "start_at": 42.237,
+                            "end_at": 42.373,
+                            "text": "this",
+                            "position": 124
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "eaff2d0d-7a0f-4063-9d9e-a5f21bb07a32",
+                    "start_at": 42.397,
+                    "end_at": 43.037,
+                    "text": "guy, everybody's",
+                    "words": [
+                        {
+                            "id": "aa7e1577-6907-4616-8e6d-5194dc7807ea",
+                            "start_at": 42.397,
+                            "end_at": 42.605,
+                            "text": "guy,",
+                            "position": 125
+                        },
+                        {
+                            "id": "3b786829-b01a-4337-80aa-125a0056983e",
+                            "start_at": 42.653,
+                            "end_at": 43.013,
+                            "text": "everybody's",
+                            "position": 126
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "b743e4b8-c54e-407a-a632-bb9ef78a2851",
+                    "start_at": 43.037,
+                    "end_at": 43.709,
+                    "text": "like.",
+                    "words": [
+                        {
+                            "id": "c611b09c-bf55-4765-bd4e-bdd06dfcb4d7",
+                            "start_at": 43.037,
+                            "end_at": 43.557,
+                            "text": "like.",
+                            "position": 127
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "a3b2fce8-4f4b-4fc2-b87f-f3c3ed9e104c",
+                    "start_at": 43.709,
+                    "end_at": 44.693,
+                    "text": "Like, you know, one",
+                    "words": [
+                        {
+                            "id": "958128b8-882d-4f10-a6ad-79b298048b5e",
+                            "start_at": 43.709,
+                            "end_at": 44.045,
+                            "text": "Like,",
+                            "position": 128
+                        },
+                        {
+                            "id": "74999adb-a2fb-4be7-be16-c71034da1f39",
+                            "start_at": 44.093,
+                            "end_at": 44.229,
+                            "text": "you",
+                            "position": 129
+                        },
+                        {
+                            "id": "9028bf4a-8d7a-4d28-ae64-2bfc6a13355b",
+                            "start_at": 44.245,
+                            "end_at": 44.397,
+                            "text": "know,",
+                            "position": 130
+                        },
+                        {
+                            "id": "ffdec2ac-4381-4e71-a5f1-2bb3ac8b432c",
+                            "start_at": 44.429,
+                            "end_at": 44.645,
+                            "text": "one",
+                            "position": 131
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "f674c226-a0f5-4b89-b951-d52df79eff35",
+                    "start_at": 44.693,
+                    "end_at": 45.997,
+                    "text": "person gets unhappy,",
+                    "words": [
+                        {
+                            "id": "0dbb5b75-880f-4c00-bee7-20cd8e43a72e",
+                            "start_at": 44.693,
+                            "end_at": 44.925,
+                            "text": "person",
+                            "position": 132
+                        },
+                        {
+                            "id": "5e757fb0-35c0-4109-983f-0c3603846f2f",
+                            "start_at": 44.973,
+                            "end_at": 45.173,
+                            "text": "gets",
+                            "position": 133
+                        },
+                        {
+                            "id": "bed11e79-b0a2-494e-ba83-396806317d86",
+                            "start_at": 45.197,
+                            "end_at": 45.893,
+                            "text": "unhappy,",
+                            "position": 134
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "d8f0a5d4-8b7f-4b46-9857-c521a1e02706",
+                    "start_at": 45.997,
+                    "end_at": 47.253,
+                    "text": "it's like a virus.",
+                    "words": [
+                        {
+                            "id": "e9b3aab9-0223-41cd-aff2-9511e93bf3f1",
+                            "start_at": 45.997,
+                            "end_at": 46.213,
+                            "text": "it's",
+                            "position": 135
+                        },
+                        {
+                            "id": "0e4574c8-8c40-4bef-9fa2-b156481d0c9f",
+                            "start_at": 46.237,
+                            "end_at": 46.541,
+                            "text": "like",
+                            "position": 136
+                        },
+                        {
+                            "id": "942e79c7-cd0c-4d22-853a-066d07ceaf74",
+                            "start_at": 46.621,
+                            "end_at": 46.789,
+                            "text": "a",
+                            "position": 137
+                        },
+                        {
+                            "id": "670b0d14-5712-4707-a38e-065ca77a518a",
+                            "start_at": 46.805,
+                            "end_at": 47.205,
+                            "text": "virus.",
+                            "position": 138
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "8b298981-7395-486d-924f-ff71851e54ef",
+                    "start_at": 47.253,
+                    "end_at": 47.797,
+                    "text": "They start to",
+                    "words": [
+                        {
+                            "id": "88f78c76-a769-4000-9e85-63451032debf",
+                            "start_at": 47.253,
+                            "end_at": 47.437,
+                            "text": "They",
+                            "position": 139
+                        },
+                        {
+                            "id": "963763f4-8185-4f83-aedd-bb3f3e999a42",
+                            "start_at": 47.469,
+                            "end_at": 47.613,
+                            "text": "start",
+                            "position": 140
+                        },
+                        {
+                            "id": "dabd9763-99a0-498d-95d9-edb81551d6ba",
+                            "start_at": 47.637,
+                            "end_at": 47.773,
+                            "text": "to",
+                            "position": 141
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "3236e10e-bd7d-49e4-814a-98276cc05f0c",
+                    "start_at": 47.797,
+                    "end_at": 48.613,
+                    "text": "convince",
+                    "words": [
+                        {
+                            "id": "480e54c4-913a-4e6a-8112-6ca1e2116413",
+                            "start_at": 47.797,
+                            "end_at": 48.445,
+                            "text": "convince",
+                            "position": 142
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "88d64c68-fdab-4a9c-92fb-5c88d55385ec",
+                    "start_at": 48.613,
+                    "end_at": 49.253,
+                    "text": "everybody.",
+                    "words": [
+                        {
+                            "id": "93c9717b-79ed-48e3-adab-9dd40036c688",
+                            "start_at": 48.613,
+                            "end_at": 49.205,
+                            "text": "everybody.",
+                            "position": 143
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "288bda8d-c9d8-4c79-8af7-edeefc0ded8f",
+                    "start_at": 49.253,
+                    "end_at": 50.001,
+                    "text": "Oh, yeah,",
+                    "words": [
+                        {
+                            "id": "b7f0b74d-e528-4262-a704-f6abc4518306",
+                            "start_at": 49.253,
+                            "end_at": 49.413,
+                            "text": "Oh,",
+                            "position": 144
+                        },
+                        {
+                            "id": "875cc986-4662-4f76-b3df-eb8f2c815cb0",
+                            "start_at": 49.437,
+                            "end_at": 50.001,
+                            "text": "yeah,",
+                            "position": 145
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "f15f5a9f-09d6-41bf-a66f-bd7f46d17f37",
+                    "start_at": 50.581,
+                    "end_at": 51.749,
+                    "text": "actually, Eddie's",
+                    "words": [
+                        {
+                            "id": "5ccdf11e-efe8-4998-8a1a-4bb359751c18",
+                            "start_at": 50.581,
+                            "end_at": 51.133,
+                            "text": "actually,",
+                            "position": 146
+                        },
+                        {
+                            "id": "6e456686-91a4-464d-85ce-0c190023b945",
+                            "start_at": 51.237,
+                            "end_at": 51.717,
+                            "text": "Eddie's",
+                            "position": 147
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "d4921b36-9a1d-489d-a21b-83ff6c3f9059",
+                    "start_at": 51.749,
+                    "end_at": 52.165,
+                    "text": "racist.",
+                    "words": [
+                        {
+                            "id": "c29e4e7c-e9f0-488f-a811-7b2528a938ff",
+                            "start_at": 51.749,
+                            "end_at": 52.109,
+                            "text": "racist.",
+                            "position": 148
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "a35aa477-134e-43a2-9ea5-6d06d869a2dc",
+                    "start_at": 52.165,
+                    "end_at": 52.421,
+                    "text": "So.",
+                    "words": [
+                        {
+                            "id": "3d37310d-3a60-41e6-bfd2-3b00d6820092",
+                            "start_at": 52.165,
+                            "end_at": 52.381,
+                            "text": "So.",
+                            "position": 149
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "0cf7c841-6c1f-47c1-bafe-e4939de0b03b",
+                    "start_at": 52.421,
+                    "end_at": 52.725,
+                    "text": "Actually,",
+                    "words": [
+                        {
+                            "id": "c6bd6812-fd27-4e33-85dd-5a591f6638ca",
+                            "start_at": 52.421,
+                            "end_at": 52.669,
+                            "text": "Actually,",
+                            "position": 150
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "a6c3500b-5f36-496b-9c36-c4ed14433c78",
+                    "start_at": 52.725,
+                    "end_at": 53.597,
+                    "text": "Eddie's this,",
+                    "words": [
+                        {
+                            "id": "c55a4b42-8fdd-42fa-82a7-1926619b06fd",
+                            "start_at": 52.725,
+                            "end_at": 53.093,
+                            "text": "Eddie's",
+                            "position": 151
+                        },
+                        {
+                            "id": "bf41a398-8efc-4be0-a2d4-2e67eea13dfb",
+                            "start_at": 53.117,
+                            "end_at": 53.493,
+                            "text": "this,",
+                            "position": 152
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "c5c8c547-c417-4630-8d43-95f196720084",
+                    "start_at": 53.597,
+                    "end_at": 54.125,
+                    "text": "like.",
+                    "words": [
+                        {
+                            "id": "542afbd3-79cd-4fd0-9570-265103e23fd8",
+                            "start_at": 53.597,
+                            "end_at": 54.029,
+                            "text": "like.",
+                            "position": 153
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "f7d7f36e-3d89-4e1d-b165-4676f0351ebc",
+                    "start_at": 54.125,
+                    "end_at": 54.733,
+                    "text": "This is crazy.",
+                    "words": [
+                        {
+                            "id": "9d8cbb04-bc2a-4f2b-bf33-bc5cc86786f3",
+                            "start_at": 54.125,
+                            "end_at": 54.333,
+                            "text": "This",
+                            "position": 154
+                        },
+                        {
+                            "id": "bd9abf5f-b6b3-4fdb-82d7-ba5039a09e04",
+                            "start_at": 54.357,
+                            "end_at": 54.517,
+                            "text": "is",
+                            "position": 155
+                        },
+                        {
+                            "id": "4cec1d75-f448-47d9-89db-008a60e00b8e",
+                            "start_at": 54.549,
+                            "end_at": 54.725,
+                            "text": "crazy.",
+                            "position": 156
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "a98a2151-6c8f-4bd8-bf08-5f9df2697029",
+                    "start_at": 54.733,
+                    "end_at": 55.197,
+                    "text": "It's crazy.",
+                    "words": [
+                        {
+                            "id": "e3c58875-2cba-4071-9369-4faeec365991",
+                            "start_at": 54.733,
+                            "end_at": 54.893,
+                            "text": "It's",
+                            "position": 157
+                        },
+                        {
+                            "id": "71aca98c-6dfb-4d4c-9bb8-3292c12e96a8",
+                            "start_at": 54.917,
+                            "end_at": 55.173,
+                            "text": "crazy.",
+                            "position": 158
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "78796d68-d861-4a51-b79d-5f78330f17eb",
+                    "start_at": 55.197,
+                    "end_at": 56.141,
+                    "text": "It's a crazy place.",
+                    "words": [
+                        {
+                            "id": "630bb2ab-f692-41ca-81f1-2538ee989176",
+                            "start_at": 55.197,
+                            "end_at": 55.309,
+                            "text": "It's",
+                            "position": 159
+                        },
+                        {
+                            "id": "7b594d4f-21b5-4f1c-aae5-c34b9fa3657e",
+                            "start_at": 55.325,
+                            "end_at": 55.453,
+                            "text": "a",
+                            "position": 160
+                        },
+                        {
+                            "id": "da68cc70-c2a1-4a63-81aa-a8de47c9b3ec",
+                            "start_at": 55.477,
+                            "end_at": 55.717,
+                            "text": "crazy",
+                            "position": 161
+                        },
+                        {
+                            "id": "5528c291-4656-444f-9ded-f0df434c3f2f",
+                            "start_at": 55.749,
+                            "end_at": 56.061,
+                            "text": "place.",
+                            "position": 162
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "eb2b2ae8-f4b7-4973-af99-158dd14bf00a",
+                    "start_at": 56.141,
+                    "end_at": 56.909,
+                    "text": "Yeah, I know.",
+                    "words": [
+                        {
+                            "id": "9d92d857-e6fd-41b3-b468-a324a6c1d212",
+                            "start_at": 56.141,
+                            "end_at": 56.309,
+                            "text": "Yeah,",
+                            "position": 163
+                        },
+                        {
+                            "id": "69150f2c-2f8b-4f8c-99b2-1a66b4ac3599",
+                            "start_at": 56.325,
+                            "end_at": 56.405,
+                            "text": "I",
+                            "position": 164
+                        },
+                        {
+                            "id": "57481063-a504-42bb-816a-5866a01d4db0",
+                            "start_at": 56.413,
+                            "end_at": 56.797,
+                            "text": "know.",
+                            "position": 165
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "5c4d8a77-aee8-4da1-b2bf-1e158c63d650",
+                    "start_at": 56.909,
+                    "end_at": 57.957,
+                    "text": "Like, crazy.",
+                    "words": [
+                        {
+                            "id": "fe7e1c6a-7dcf-404c-a4ac-bc4afe819743",
+                            "start_at": 56.909,
+                            "end_at": 57.253,
+                            "text": "Like,",
+                            "position": 166
+                        },
+                        {
+                            "id": "d3d93343-d651-4508-a1e3-a932f99266b5",
+                            "start_at": 57.317,
+                            "end_at": 57.853,
+                            "text": "crazy.",
+                            "position": 167
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "298dc21c-e0b4-4040-af11-270d4516b463",
+                    "start_at": 57.957,
+                    "end_at": 60.493,
+                    "text": "One toxic person",
+                    "words": [
+                        {
+                            "id": "95c2a9ef-c701-4858-bd81-efacb9b07c76",
+                            "start_at": 57.957,
+                            "end_at": 58.677,
+                            "text": "One",
+                            "position": 168
+                        },
+                        {
+                            "id": "140f7eb5-80a2-4bc6-b149-3819ba3e5981",
+                            "start_at": 58.869,
+                            "end_at": 59.797,
+                            "text": "toxic",
+                            "position": 169
+                        },
+                        {
+                            "id": "01e09b22-19f7-4bf9-9ae2-92d219367fc2",
+                            "start_at": 59.949,
+                            "end_at": 60.405,
+                            "text": "person",
+                            "position": 170
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "2c98346d-ab8d-4730-b9b8-5ddb896972b0",
+                    "start_at": 60.493,
+                    "end_at": 61.429,
+                    "text": "can just ruin",
+                    "words": [
+                        {
+                            "id": "64e5539d-939a-45bd-9332-6fafb9a6a7ac",
+                            "start_at": 60.493,
+                            "end_at": 60.741,
+                            "text": "can",
+                            "position": 171
+                        },
+                        {
+                            "id": "fbdd4065-3450-4a70-b236-b76ed31fd977",
+                            "start_at": 60.781,
+                            "end_at": 61.053,
+                            "text": "just",
+                            "position": 172
+                        },
+                        {
+                            "id": "cd6352dc-ba0c-447e-8367-1caca559ef08",
+                            "start_at": 61.117,
+                            "end_at": 61.397,
+                            "text": "ruin",
+                            "position": 173
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "8903ec4d-5d9e-4bdd-a8e5-e55c631db900",
+                    "start_at": 61.429,
+                    "end_at": 62.213,
+                    "text": "the whole team.",
+                    "words": [
+                        {
+                            "id": "a27bba0f-3916-4290-9ffd-837b9f776a3f",
+                            "start_at": 61.429,
+                            "end_at": 61.573,
+                            "text": "the",
+                            "position": 174
+                        },
+                        {
+                            "id": "345d269c-454f-4425-ae5b-ba792faabd04",
+                            "start_at": 61.597,
+                            "end_at": 61.757,
+                            "text": "whole",
+                            "position": 175
+                        },
+                        {
+                            "id": "187eede0-b97d-43ff-9789-08d7138a94fc",
+                            "start_at": 61.789,
+                            "end_at": 62.125,
+                            "text": "team.",
+                            "position": 176
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "fbdd08d2-a074-473d-ba03-a504e6be43d2",
+                    "start_at": 62.213,
+                    "end_at": 62.477,
+                    "text": "Yeah.",
+                    "words": [
+                        {
+                            "id": "28d01099-ffd9-4f7c-8caf-104bd49f63a8",
+                            "start_at": 62.213,
+                            "end_at": 62.453,
+                            "text": "Yeah.",
+                            "position": 177
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "dfd645f3-4d2f-495b-954d-36ab5cb408e1",
+                    "start_at": 62.477,
+                    "end_at": 63.109,
+                    "text": "Easily.",
+                    "words": [
+                        {
+                            "id": "715e8ad5-06ad-44dc-922f-3f3c55131a35",
+                            "start_at": 62.477,
+                            "end_at": 62.997,
+                            "text": "Easily.",
+                            "position": 178
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "01738f70-38ab-4a11-85b6-dc9772f652db",
+                    "start_at": 63.109,
+                    "end_at": 63.357,
+                    "text": "And.",
+                    "words": [
+                        {
+                            "id": "df6c6cd1-e7e0-4858-92d5-4424b0ad9e88",
+                            "start_at": 63.109,
+                            "end_at": 63.333,
+                            "text": "And.",
+                            "position": 179
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "54d50512-ec6b-4332-9c17-63e2126270a3",
+                    "start_at": 63.357,
+                    "end_at": 63.709,
+                    "text": "And.",
+                    "words": [
+                        {
+                            "id": "857254dd-1653-4802-95f5-d96d3c7b8044",
+                            "start_at": 63.357,
+                            "end_at": 63.637,
+                            "text": "And.",
+                            "position": 180
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "e359083f-9fcd-4d9e-ac4e-b0132982589f",
+                    "start_at": 63.709,
+                    "end_at": 65.281,
+                    "text": "And they try to.",
+                    "words": [
+                        {
+                            "id": "68b180c2-6cde-4537-9ff3-dfeb6f6a016f",
+                            "start_at": 63.709,
+                            "end_at": 64.013,
+                            "text": "And",
+                            "position": 181
+                        },
+                        {
+                            "id": "8bbcfef8-8f2f-4ba2-9482-13d50484fdcb",
+                            "start_at": 64.077,
+                            "end_at": 64.325,
+                            "text": "they",
+                            "position": 182
+                        },
+                        {
+                            "id": "02f62705-74d4-4cf5-8428-30b9944f66d7",
+                            "start_at": 64.373,
+                            "end_at": 64.629,
+                            "text": "try",
+                            "position": 183
+                        },
+                        {
+                            "id": "f95bbdd1-d406-4186-ac32-cbe939de0bce",
+                            "start_at": 64.685,
+                            "end_at": 65.281,
+                            "text": "to.",
+                            "position": 184
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "3773f85c-df86-4b0c-88c0-4e52eb3c83da",
+                    "start_at": 65.941,
+                    "end_at": 66.749,
+                    "text": "They try to get",
+                    "words": [
+                        {
+                            "id": "84f9aa99-292f-42d0-ae9d-4adf3c4099a1",
+                            "start_at": 65.941,
+                            "end_at": 66.277,
+                            "text": "They",
+                            "position": 185
+                        },
+                        {
+                            "id": "3759260c-84fd-4a2f-8cd0-dddc200da080",
+                            "start_at": 66.309,
+                            "end_at": 66.429,
+                            "text": "try",
+                            "position": 186
+                        },
+                        {
+                            "id": "076d50af-04e2-4336-8486-3b18c3a9b4a7",
+                            "start_at": 66.445,
+                            "end_at": 66.549,
+                            "text": "to",
+                            "position": 187
+                        },
+                        {
+                            "id": "c3c0fabb-8cb7-4df9-9e0f-a9eae6598541",
+                            "start_at": 66.565,
+                            "end_at": 66.717,
+                            "text": "get",
+                            "position": 188
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "f70a433f-a961-41d8-8feb-297c2d2c7eea",
+                    "start_at": 66.749,
+                    "end_at": 67.525,
+                    "text": "everyone to quit",
+                    "words": [
+                        {
+                            "id": "69fd81fd-fadd-4c14-9117-6ce92447d07e",
+                            "start_at": 66.749,
+                            "end_at": 66.989,
+                            "text": "everyone",
+                            "position": 189
+                        },
+                        {
+                            "id": "2fbffa6f-eb30-491e-b14e-e849b8ce05e7",
+                            "start_at": 67.045,
+                            "end_at": 67.189,
+                            "text": "to",
+                            "position": 190
+                        },
+                        {
+                            "id": "a15e8a65-4577-44aa-9cec-18214ac6b022",
+                            "start_at": 67.205,
+                            "end_at": 67.469,
+                            "text": "quit",
+                            "position": 191
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "16ebefb6-ec41-4592-a5d4-8921bf77ba7e",
+                    "start_at": 67.525,
+                    "end_at": 67.909,
+                    "text": "when they're",
+                    "words": [
+                        {
+                            "id": "75273b04-0c85-4efe-8ac7-d837eed075a8",
+                            "start_at": 67.525,
+                            "end_at": 67.693,
+                            "text": "when",
+                            "position": 192
+                        },
+                        {
+                            "id": "96618443-637a-4489-98a4-8c0cd4de3745",
+                            "start_at": 67.717,
+                            "end_at": 67.877,
+                            "text": "they're",
+                            "position": 193
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "ea2bffa6-dbe3-4fae-a624-3cbc2c74f325",
+                    "start_at": 67.909,
+                    "end_at": 68.269,
+                    "text": "quitting.",
+                    "words": [
+                        {
+                            "id": "dd5ae3ee-9539-4b8d-ba13-69ae08c4d88e",
+                            "start_at": 67.909,
+                            "end_at": 68.237,
+                            "text": "quitting.",
+                            "position": 194
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "60e5a131-ba17-47d9-9b56-0682183c0a6e",
+                    "start_at": 68.269,
+                    "end_at": 68.709,
+                    "text": "They're like, oh,",
+                    "words": [
+                        {
+                            "id": "b6d19f4b-3f04-4b0f-8bb6-b70c2ae52808",
+                            "start_at": 68.269,
+                            "end_at": 68.389,
+                            "text": "They're",
+                            "position": 195
+                        },
+                        {
+                            "id": "1972609b-ff58-4663-8de0-1eb759b73e73",
+                            "start_at": 68.405,
+                            "end_at": 68.509,
+                            "text": "like,",
+                            "position": 196
+                        },
+                        {
+                            "id": "451fa28f-4031-4416-91a4-596c9eb8686c",
+                            "start_at": 68.525,
+                            "end_at": 68.677,
+                            "text": "oh,",
+                            "position": 197
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "7fb349f0-4aea-4d46-ba89-e476eef13de1",
+                    "start_at": 68.709,
+                    "end_at": 69.301,
+                    "text": "they try to get",
+                    "words": [
+                        {
+                            "id": "65a9a830-e23b-43d0-9493-f9425f9be171",
+                            "start_at": 68.709,
+                            "end_at": 68.853,
+                            "text": "they",
+                            "position": 198
+                        },
+                        {
+                            "id": "4142fdf5-f904-426e-8371-f0fb9a325347",
+                            "start_at": 68.877,
+                            "end_at": 68.989,
+                            "text": "try",
+                            "position": 199
+                        },
+                        {
+                            "id": "9dfa3e3b-6be1-4a27-bdbb-2227488a6a33",
+                            "start_at": 69.005,
+                            "end_at": 69.085,
+                            "text": "to",
+                            "position": 200
+                        },
+                        {
+                            "id": "94e62c10-7230-4587-a6af-e21f5c8d548a",
+                            "start_at": 69.093,
+                            "end_at": 69.261,
+                            "text": "get",
+                            "position": 201
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "263b7b0e-d581-4574-9db5-ecf3967186a1",
+                    "start_at": 69.301,
+                    "end_at": 70.229,
+                    "text": "everybody to quit.",
+                    "words": [
+                        {
+                            "id": "4bbfe3c5-40f9-412e-9c92-77f2a775a85f",
+                            "start_at": 69.301,
+                            "end_at": 69.653,
+                            "text": "everybody",
+                            "position": 202
+                        },
+                        {
+                            "id": "5a8f2614-9040-49b4-a696-bff8e6eba135",
+                            "start_at": 69.677,
+                            "end_at": 69.813,
+                            "text": "to",
+                            "position": 203
+                        },
+                        {
+                            "id": "eff81383-3f51-4243-9cad-843a3768ac67",
+                            "start_at": 69.837,
+                            "end_at": 70.157,
+                            "text": "quit.",
+                            "position": 204
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "af374425-a14e-4084-a1f8-e7f4d060438c",
+                    "start_at": 70.229,
+                    "end_at": 70.541,
+                    "text": "Yeah.",
+                    "words": [
+                        {
+                            "id": "e146eb72-7fb6-441d-8efd-033e102caa2a",
+                            "start_at": 70.229,
+                            "end_at": 70.501,
+                            "text": "Yeah.",
+                            "position": 205
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "f718a983-11b4-4cd0-ba29-8d0345d55186",
+                    "start_at": 70.541,
+                    "end_at": 71.021,
+                    "text": "And the dumb",
+                    "words": [
+                        {
+                            "id": "3251efe8-a973-4610-9bf0-f0c205da559f",
+                            "start_at": 70.541,
+                            "end_at": 70.669,
+                            "text": "And",
+                            "position": 206
+                        },
+                        {
+                            "id": "73e38402-42d3-496a-8d69-04668c49ca6b",
+                            "start_at": 70.685,
+                            "end_at": 70.789,
+                            "text": "the",
+                            "position": 207
+                        },
+                        {
+                            "id": "14cb0132-2352-403f-978c-0de24538b6ab",
+                            "start_at": 70.805,
+                            "end_at": 70.981,
+                            "text": "dumb",
+                            "position": 208
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "6478347b-88f4-4bcb-a2c1-e5a96cb87148",
+                    "start_at": 71.021,
+                    "end_at": 71.357,
+                    "text": "thing is,",
+                    "words": [
+                        {
+                            "id": "6c33131b-c113-470f-b8b8-240de6fa9757",
+                            "start_at": 71.021,
+                            "end_at": 71.173,
+                            "text": "thing",
+                            "position": 209
+                        },
+                        {
+                            "id": "52c58764-cde0-437b-8cc4-a563c849f2e7",
+                            "start_at": 71.197,
+                            "end_at": 71.333,
+                            "text": "is,",
+                            "position": 210
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "588d955c-140a-46f4-86e3-ab1869ac461f",
+                    "start_at": 71.357,
+                    "end_at": 71.973,
+                    "text": "sometimes people",
+                    "words": [
+                        {
+                            "id": "e3e75fd2-f575-4d70-82c1-43ce4a2aadde",
+                            "start_at": 71.357,
+                            "end_at": 71.693,
+                            "text": "sometimes",
+                            "position": 211
+                        },
+                        {
+                            "id": "96036a04-e642-4d08-abbb-e78ca96b0f16",
+                            "start_at": 71.717,
+                            "end_at": 71.925,
+                            "text": "people",
+                            "position": 212
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "5becdaf0-c654-43a1-a43d-29098ccc8b96",
+                    "start_at": 71.973,
+                    "end_at": 72.429,
+                    "text": "will quit.",
+                    "words": [
+                        {
+                            "id": "6a2d55c4-b48b-4018-b9a1-828ef67b9128",
+                            "start_at": 71.973,
+                            "end_at": 72.157,
+                            "text": "will",
+                            "position": 213
+                        },
+                        {
+                            "id": "18a60204-b523-46bf-ab6c-7e7298009d73",
+                            "start_at": 72.189,
+                            "end_at": 72.397,
+                            "text": "quit.",
+                            "position": 214
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "f5c0ec95-9ab2-4415-b6b6-05c683a9d236",
+                    "start_at": 72.429,
+                    "end_at": 73.389,
+                    "text": "Like, we had a guy",
+                    "words": [
+                        {
+                            "id": "3737bbf5-690a-4595-ad9a-2af08126c563",
+                            "start_at": 72.429,
+                            "end_at": 72.669,
+                            "text": "Like,",
+                            "position": 215
+                        },
+                        {
+                            "id": "f7f90b28-4a3a-423d-a6ad-ca4749ca0c96",
+                            "start_at": 72.725,
+                            "end_at": 72.893,
+                            "text": "we",
+                            "position": 216
+                        },
+                        {
+                            "id": "49a1c625-d209-4bfd-a17c-72ca97b0cd5f",
+                            "start_at": 72.917,
+                            "end_at": 73.029,
+                            "text": "had",
+                            "position": 217
+                        },
+                        {
+                            "id": "699ec5ae-711b-4c43-a2ee-36f5c36d3fe6",
+                            "start_at": 73.045,
+                            "end_at": 73.149,
+                            "text": "a",
+                            "position": 218
+                        },
+                        {
+                            "id": "808b9d28-0bf4-49c0-92ce-2915fb4cf426",
+                            "start_at": 73.165,
+                            "end_at": 73.357,
+                            "text": "guy",
+                            "position": 219
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "f300859a-2b10-4db4-8638-84d636fb5fae",
+                    "start_at": 73.389,
+                    "end_at": 74.485,
+                    "text": "recently quit, and",
+                    "words": [
+                        {
+                            "id": "8e1fb1b7-92e5-4f49-901b-985c6b30bd1e",
+                            "start_at": 73.389,
+                            "end_at": 73.653,
+                            "text": "recently",
+                            "position": 220
+                        },
+                        {
+                            "id": "f82d82cb-7790-4827-9fb4-7092d68724f6",
+                            "start_at": 73.717,
+                            "end_at": 74.173,
+                            "text": "quit,",
+                            "position": 221
+                        },
+                        {
+                            "id": "582386f7-87e3-41c1-ad94-30101ee3ea25",
+                            "start_at": 74.277,
+                            "end_at": 74.469,
+                            "text": "and",
+                            "position": 222
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "3bba264e-b52c-4a7c-9370-dc559bfb8ee0",
+                    "start_at": 74.485,
+                    "end_at": 74.949,
+                    "text": "there's a couple",
+                    "words": [
+                        {
+                            "id": "6535a712-e452-499d-a74b-c8ceb8a36eee",
+                            "start_at": 74.485,
+                            "end_at": 74.613,
+                            "text": "there's",
+                            "position": 223
+                        },
+                        {
+                            "id": "8858c50e-1412-48ef-896c-bd876d406355",
+                            "start_at": 74.637,
+                            "end_at": 74.725,
+                            "text": "a",
+                            "position": 224
+                        },
+                        {
+                            "id": "f0e1c924-a679-4203-ae34-b038bb5c2e79",
+                            "start_at": 74.733,
+                            "end_at": 74.917,
+                            "text": "couple",
+                            "position": 225
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "50485f89-05c4-47ff-88ac-d42117b743a6",
+                    "start_at": 74.949,
+                    "end_at": 75.373,
+                    "text": "people that are",
+                    "words": [
+                        {
+                            "id": "cc6a5db1-0d58-488d-bdc4-353efb9d586e",
+                            "start_at": 74.949,
+                            "end_at": 75.117,
+                            "text": "people",
+                            "position": 226
+                        },
+                        {
+                            "id": "f08fc088-79e8-4516-b5f9-abc1ce2f66c9",
+                            "start_at": 75.149,
+                            "end_at": 75.269,
+                            "text": "that",
+                            "position": 227
+                        },
+                        {
+                            "id": "f7086056-3294-434e-8c09-427ee1f4426d",
+                            "start_at": 75.285,
+                            "end_at": 75.365,
+                            "text": "are",
+                            "position": 228
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "c11cbef8-ac8d-4cdf-981e-d12231110da9",
+                    "start_at": 75.373,
+                    "end_at": 75.909,
+                    "text": "kind of on their",
+                    "words": [
+                        {
+                            "id": "fa5e47d1-f029-443b-ad3d-6bd4ab465e78",
+                            "start_at": 75.373,
+                            "end_at": 75.469,
+                            "text": "kind",
+                            "position": 229
+                        },
+                        {
+                            "id": "c368b798-f06d-4f14-8454-65e905a0836a",
+                            "start_at": 75.485,
+                            "end_at": 75.589,
+                            "text": "of",
+                            "position": 230
+                        },
+                        {
+                            "id": "2d12e1d5-484a-45d1-838b-e92ee00ee42e",
+                            "start_at": 75.605,
+                            "end_at": 75.709,
+                            "text": "on",
+                            "position": 231
+                        },
+                        {
+                            "id": "1ba69393-24c3-40c4-b270-0e923dba6a3b",
+                            "start_at": 75.725,
+                            "end_at": 75.877,
+                            "text": "their",
+                            "position": 232
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "663e0b3d-f303-4f85-95eb-e61cd1af7885",
+                    "start_at": 75.909,
+                    "end_at": 76.885,
+                    "text": "last couple weeks",
+                    "words": [
+                        {
+                            "id": "18415bdb-c446-4767-b9bd-c6594840d8ba",
+                            "start_at": 75.909,
+                            "end_at": 76.077,
+                            "text": "last",
+                            "position": 233
+                        },
+                        {
+                            "id": "8c6b1201-e5e1-472a-81c1-d44c89be2b1d",
+                            "start_at": 76.109,
+                            "end_at": 76.349,
+                            "text": "couple",
+                            "position": 234
+                        },
+                        {
+                            "id": "34d5eaef-0b08-4539-95f9-d9587bab7485",
+                            "start_at": 76.405,
+                            "end_at": 76.789,
+                            "text": "weeks",
+                            "position": 235
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "a7f77edb-495d-4857-ba1d-6e1bfde5757d",
+                    "start_at": 76.885,
+                    "end_at": 77.589,
+                    "text": "because of this",
+                    "words": [
+                        {
+                            "id": "dda832f6-aefd-440a-a9a1-fbb40713d4d2",
+                            "start_at": 76.885,
+                            "end_at": 77.165,
+                            "text": "because",
+                            "position": 236
+                        },
+                        {
+                            "id": "2bf0ebfc-ea38-4d2a-9046-f961d9f8e880",
+                            "start_at": 77.213,
+                            "end_at": 77.373,
+                            "text": "of",
+                            "position": 237
+                        },
+                        {
+                            "id": "ae3b41f7-80a2-4317-b862-96de8792d3ab",
+                            "start_at": 77.397,
+                            "end_at": 77.557,
+                            "text": "this",
+                            "position": 238
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "f18ece6c-7e6c-406b-b274-eff108370e10",
+                    "start_at": 77.589,
+                    "end_at": 77.893,
+                    "text": "guy.",
+                    "words": [
+                        {
+                            "id": "1e8355c8-2b52-4f0f-bada-56288f38135d",
+                            "start_at": 77.589,
+                            "end_at": 77.845,
+                            "text": "guy.",
+                            "position": 239
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "13164de3-78e2-41b9-83cc-e10713719576",
+                    "start_at": 77.893,
+                    "end_at": 78.961,
+                    "text": "Luckily, these are",
+                    "words": [
+                        {
+                            "id": "e084029f-014e-4508-bd5a-e10a71f6d2a5",
+                            "start_at": 77.893,
+                            "end_at": 78.181,
+                            "text": "Luckily,",
+                            "position": 240
+                        },
+                        {
+                            "id": "e86c69b6-35b3-4550-9c13-fb712b4bc359",
+                            "start_at": 78.221,
+                            "end_at": 78.373,
+                            "text": "these",
+                            "position": 241
+                        },
+                        {
+                            "id": "47a8e617-b19e-4e28-8c34-56e21fc35836",
+                            "start_at": 78.397,
+                            "end_at": 78.961,
+                            "text": "are",
+                            "position": 242
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "b2896a85-9580-43a0-9022-f0948ec8fd55",
+                    "start_at": 80.141,
+                    "end_at": 81.005,
+                    "text": "not great people.",
+                    "words": [
+                        {
+                            "id": "96f5674f-37f2-4f29-a55c-328e93dd62ed",
+                            "start_at": 80.141,
+                            "end_at": 80.453,
+                            "text": "not",
+                            "position": 243
+                        },
+                        {
+                            "id": "80330d2e-83e1-4aed-b67b-fe70b89afa77",
+                            "start_at": 80.477,
+                            "end_at": 80.661,
+                            "text": "great",
+                            "position": 244
+                        },
+                        {
+                            "id": "a0d62f00-5c0d-49a8-aa0b-84d002b050b3",
+                            "start_at": 80.701,
+                            "end_at": 80.949,
+                            "text": "people.",
+                            "position": 245
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "7ff6f5e4-8ddf-43af-9b9b-6bcd8c5080ed",
+                    "start_at": 81.005,
+                    "end_at": 81.261,
+                    "text": "Right.",
+                    "words": [
+                        {
+                            "id": "f6e35fe2-f9e3-4617-ad70-952e2587b08b",
+                            "start_at": 81.005,
+                            "end_at": 81.221,
+                            "text": "Right.",
+                            "position": 246
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "d744ee2a-cd45-49c4-a019-ec146caf3f60",
+                    "start_at": 81.261,
+                    "end_at": 81.901,
+                    "text": "So it's okay.",
+                    "words": [
+                        {
+                            "id": "cb918b08-9137-4130-81d8-999b4c2ea38a",
+                            "start_at": 81.261,
+                            "end_at": 81.389,
+                            "text": "So",
+                            "position": 247
+                        },
+                        {
+                            "id": "adea465f-5b31-4b88-b2ee-63bdacb2f4cf",
+                            "start_at": 81.405,
+                            "end_at": 81.533,
+                            "text": "it's",
+                            "position": 248
+                        },
+                        {
+                            "id": "bc034e7e-5b69-4e8f-b816-bd10ac2501bb",
+                            "start_at": 81.557,
+                            "end_at": 81.861,
+                            "text": "okay.",
+                            "position": 249
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "afb466f0-896b-4bf7-9eb6-abf8dd28245a",
+                    "start_at": 81.901,
+                    "end_at": 82.509,
+                    "text": "Right.",
+                    "words": [
+                        {
+                            "id": "fe046b77-c1bf-4282-821b-1df0cb58ae23",
+                            "start_at": 81.901,
+                            "end_at": 82.377,
+                            "text": "Right.",
+                            "position": 250
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "47207730-a33a-4c27-aada-8a939cd373b7",
+                    "start_at": 82.509,
+                    "end_at": 84.433,
+                    "text": "But the thing is,",
+                    "words": [
+                        {
+                            "id": "e5236c84-f156-4885-bbfe-85a992e35c3e",
+                            "start_at": 82.509,
+                            "end_at": 83.181,
+                            "text": "But",
+                            "position": 251
+                        },
+                        {
+                            "id": "8fe68ab0-c3eb-43c4-ba9f-c561ceca2483",
+                            "start_at": 83.641,
+                            "end_at": 83.953,
+                            "text": "the",
+                            "position": 252
+                        },
+                        {
+                            "id": "4e5a0f3b-a409-4faa-90e8-15aeea6fa505",
+                            "start_at": 83.977,
+                            "end_at": 84.137,
+                            "text": "thing",
+                            "position": 253
+                        },
+                        {
+                            "id": "53023a32-ce32-4ab5-8b7e-7bf9cdfe2e70",
+                            "start_at": 84.169,
+                            "end_at": 84.385,
+                            "text": "is,",
+                            "position": 254
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "eb04be0a-9c18-45ca-969a-4da798780397",
+                    "start_at": 84.433,
+                    "end_at": 85.769,
+                    "text": "after you quit, is",
+                    "words": [
+                        {
+                            "id": "ffed7e78-0f00-4cbf-a78b-00ec79b1597a",
+                            "start_at": 84.433,
+                            "end_at": 84.641,
+                            "text": "after",
+                            "position": 255
+                        },
+                        {
+                            "id": "1dc2c2ec-83e8-45b8-af45-955bb6eac8c6",
+                            "start_at": 84.681,
+                            "end_at": 84.833,
+                            "text": "you",
+                            "position": 256
+                        },
+                        {
+                            "id": "e7e15c49-b15f-4ad3-859c-f0377bec8d02",
+                            "start_at": 84.857,
+                            "end_at": 85.345,
+                            "text": "quit,",
+                            "position": 257
+                        },
+                        {
+                            "id": "49e07760-6148-4beb-bb09-5fd053a4005b",
+                            "start_at": 85.473,
+                            "end_at": 85.737,
+                            "text": "is",
+                            "position": 258
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "00dc62df-46b3-45d1-b489-33adc7cd798a",
+                    "start_at": 85.769,
+                    "end_at": 86.433,
+                    "text": "this person going",
+                    "words": [
+                        {
+                            "id": "ad518c61-dfa6-4df4-9538-81985ea2ece1",
+                            "start_at": 85.769,
+                            "end_at": 85.961,
+                            "text": "this",
+                            "position": 259
+                        },
+                        {
+                            "id": "98aaeba6-4267-49fb-8d67-a86ed5292256",
+                            "start_at": 86.001,
+                            "end_at": 86.249,
+                            "text": "person",
+                            "position": 260
+                        },
+                        {
+                            "id": "1ea47d6b-d7ae-4943-b7a9-f843de9cbe81",
+                            "start_at": 86.305,
+                            "end_at": 86.425,
+                            "text": "going",
+                            "position": 261
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "f4c5f168-79d5-4669-a4b2-d15e58283050",
+                    "start_at": 86.433,
+                    "end_at": 88.113,
+                    "text": "to pay your bills?",
+                    "words": [
+                        {
+                            "id": "4104ec82-9bc2-4516-97b8-9d212918c05d",
+                            "start_at": 86.433,
+                            "end_at": 87.033,
+                            "text": "to",
+                            "position": 262
+                        },
+                        {
+                            "id": "dce0ec2f-832f-4408-aa22-b8573a9e1527",
+                            "start_at": 87.217,
+                            "end_at": 87.537,
+                            "text": "pay",
+                            "position": 263
+                        },
+                        {
+                            "id": "6d4feafd-8b34-494f-bf20-2d9c563a0ef7",
+                            "start_at": 87.569,
+                            "end_at": 87.737,
+                            "text": "your",
+                            "position": 264
+                        },
+                        {
+                            "id": "93ccd06a-1ed0-4084-bd58-4c58b4d5a36e",
+                            "start_at": 87.769,
+                            "end_at": 88.065,
+                            "text": "bills?",
+                            "position": 265
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "56b0e5fc-eebb-4083-b47b-80cd4b41c68b",
+                    "start_at": 88.113,
+                    "end_at": 89.945,
+                    "text": "No, no, no, no.",
+                    "words": [
+                        {
+                            "id": "0ba5bdba-0c95-415d-bf2d-0ee9ca4a53ef",
+                            "start_at": 88.113,
+                            "end_at": 88.369,
+                            "text": "No,",
+                            "position": 266
+                        },
+                        {
+                            "id": "dc715cd3-83ce-4761-a51f-b580c1c88da4",
+                            "start_at": 88.425,
+                            "end_at": 88.689,
+                            "text": "no,",
+                            "position": 267
+                        },
+                        {
+                            "id": "c5046ded-c467-4010-b5b1-e722df2d9a47",
+                            "start_at": 88.745,
+                            "end_at": 89.153,
+                            "text": "no,",
+                            "position": 268
+                        },
+                        {
+                            "id": "bc13e52f-00e1-4a99-98de-1df324f21687",
+                            "start_at": 89.257,
+                            "end_at": 89.809,
+                            "text": "no.",
+                            "position": 269
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "0524d6f2-0577-47ae-a246-d2b1b8101078",
+                    "start_at": 89.945,
+                    "end_at": 90.377,
+                    "text": "They're not",
+                    "words": [
+                        {
+                            "id": "6c4c331a-5c89-4377-a8b3-206332924ca0",
+                            "start_at": 89.945,
+                            "end_at": 90.209,
+                            "text": "They're",
+                            "position": 270
+                        },
+                        {
+                            "id": "46e6b0ff-4e45-4fe6-9174-235caa6b53ca",
+                            "start_at": 90.225,
+                            "end_at": 90.353,
+                            "text": "not",
+                            "position": 271
+                        }
+                    ],
+                    "visible": "true"
+                },
+                {
+                    "id": "3b2e6c89-ce3b-44a5-ae31-9f1f6e5ecd2d",
+                    "start_at": 90.377,
+                    "end_at": 90.857,
+                    "text": "going to.",
+                    "words": [
+                        {
+                            "id": "d40a9ffe-66e2-43df-9390-e5f9380bdac4",
+                            "start_at": 90.377,
+                            "end_at": 90.537,
+                            "text": "going",
+                            "position": 272
+                        },
+                        {
+                            "id": "381d55b0-3079-4625-8505-17dc7e286207",
+                            "start_at": 90.569,
+                            "end_at": 90.857,
+                            "text": "to.",
+                            "position": 273
+                        }
+                    ],
+                    "visible": "true"
+                }
+            ]
+        }
+    }
+}

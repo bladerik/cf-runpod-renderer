@@ -88,7 +88,7 @@ async def render_pixi_scene(data: dict):
     scene_props = data['options']
     scene = data['scene']
     fonts = data['fonts']
-
+    subtitles = data['subtitles']
     width = scene['width']
     height = scene['height']
     fps = scene['fps']
@@ -135,7 +135,8 @@ async def render_pixi_scene(data: dict):
         browser_data = {
             "scene": scene,
             "fps": fps,
-            "fonts": fonts
+            "fonts": fonts,
+            "subtitles": subtitles
         }
 
         result = await page.evaluate("""
@@ -144,6 +145,7 @@ async def render_pixi_scene(data: dict):
                 window.SCENE = data.scene;
                 window.FPS = data.fps;
                 window.FONTS = data.fonts;
+                window.SUBTITLES = data.subtitles;
                 window.loadScene()
                 return { success: true, message: 'Data added successfully' };
             } catch (error) {
@@ -171,16 +173,7 @@ async def render_pixi_scene(data: dict):
         frames = []
 
         for i in range(from_frame, to_frame + 1):
-            await page.evaluate(f'window.setFrame({i})')
-            await page.wait_for_selector(f"#frame-{i}", state="attached", timeout=5000)
-
-            frame_data = await page.evaluate(f"""
-                () => {{
-                    const canvas = document.querySelector("#cf-canvas");
-                    return canvas.toDataURL('image/{"png" if transparent else "jpeg"}', {quality/100});
-                }}
-            """)
-
+            frame_data = await page.evaluate(f'window.setFrame({i})')
             frames.append(frame_data)
             print(f"Frame {i} captured")
 
