@@ -4,10 +4,19 @@ import json
 import subprocess 
 import runpod
 import envkey
+import os
+
 from browser import BrowserSceneRenderer
 
 from playwright.async_api import async_playwright
 
+def find_nvidia_json_files():
+    nvidia_files = []
+    for root, dirs, files in os.walk('/'):
+        for file in files:
+            if 'nvidia' in file.lower() and file.lower().endswith('.json'):
+                nvidia_files.append(os.path.join(root, file))
+    return nvidia_files
 
 async def gpu_info(data: dict):
     # print("NVIDIA SMI Output:")
@@ -69,20 +78,25 @@ async def gpu_info(data: dict):
         vulkan_info = ""
         try:
             print("Vulkan Info:")
-            vulkan_info = subprocess.check_output(["vulkaninfo"]).decode()
+            vulkan_info = subprocess.check_output(["vulkaninfo | grep -i 'gpu id'"]).decode()
         except subprocess.CalledProcessError:
             vulkan_info = "Vulkan info not available: Command failed"
         except FileNotFoundError:
             vulkan_info = "Vulkan info not available: Command not found"
 
 
-        
+        # Find and print NVIDIA JSON files
+        print("Searching for NVIDIA JSON files...")
+        nvidia_files = find_nvidia_json_files()
+        print("Found NVIDIA JSON files:")
+        for file in nvidia_files:
+            print(file)
 
         await browser.close()
 
         return {
             "gpu_info_text": gpu_info_text,
-        "vulkan_info": vulkan_info,
+            "vulkan_info": vulkan_info,
         }
         
 
