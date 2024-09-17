@@ -78,7 +78,7 @@ async def gpu_info(data: dict):
         vulkan_info = ""
         try:
             print("Vulkan Info:")
-            vulkan_info = subprocess.check_output(["vulkaninfo | grep -i 'gpu id'"]).decode()
+            vulkan_info = subprocess.check_output("vulkaninfo | grep -i 'gpu id'", shell=True).decode()
         except subprocess.CalledProcessError:
             vulkan_info = "Vulkan info not available: Command failed"
         except FileNotFoundError:
