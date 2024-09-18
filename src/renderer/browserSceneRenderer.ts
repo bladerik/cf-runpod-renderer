@@ -48,7 +48,7 @@ class BrowserSceneRenderer {
         this.renderOnSeek = data.renderOnSeek || true;
         this.renderFrameFormat = data.renderFrameFormat || "jpg";
         this.renderFrameQuality = data.renderFrameQuality || 0.8;
-        this.concurrency = data.concurrency || 1;
+        this.concurrency = 1; // hardcoded since merging does not work for some reasondata.concurrency || 1;
         this.browserType = data.browserType || "firefox";
         this.headless = data.headless || false;
         this.browserArgs = data.browserArgs || [];
@@ -409,6 +409,7 @@ class BrowserSceneRenderer {
             const total_frames = to_frame - from_frame + 1;
 
             let chunkPaths: string[] = [];
+            let output = "";
 
             if (this.concurrency > 1 && total_frames > 30) {
                 const min_frames_per_chunk = 30;
@@ -436,20 +437,26 @@ class BrowserSceneRenderer {
                         this.renderChunk(chunk.start, chunk.end)
                     )
                 );
+                output = await this.mergeVideoChunks(chunkPaths);
+                chunkPaths.forEach((path) => fs.unlinkSync(path));
             } else {
                 const singleChunkPath = await this.renderChunk(
                     from_frame,
                     to_frame
                 );
-                chunkPaths = [singleChunkPath];
+
+                fs.copyFileSync(
+                    singleChunkPath,
+                    this.workdir + "/" + this.outputVideoPath
+                );
+                fs.unlinkSync(singleChunkPath);
+                output = this.workdir + "/" + this.outputVideoPath;
             }
 
             // Merge video chunks
-            const output = await this.mergeVideoChunks(chunkPaths);
             console.log("-- video rendered! --", output);
 
             // Clean up temporary chunk files
-            chunkPaths.forEach((path) => fs.unlinkSync(path));
 
             return output;
         } catch (error: any) {
