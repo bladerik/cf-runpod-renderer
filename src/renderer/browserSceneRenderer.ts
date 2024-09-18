@@ -48,7 +48,7 @@ class BrowserSceneRenderer {
         this.renderOnSeek = data.renderOnSeek || true;
         this.renderFrameFormat = data.renderFrameFormat || "jpg";
         this.renderFrameQuality = data.renderFrameQuality || 0.8;
-        this.concurrency = 1; // hardcoded since merging does not work for some reasondata.concurrency || 1;
+        this.concurrency = data.concurrency || 1;
         this.browserType = data.browserType || "firefox";
         this.headless = data.headless || false;
         this.browserArgs = data.browserArgs || [];

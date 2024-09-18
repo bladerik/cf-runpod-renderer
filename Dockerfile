@@ -35,14 +35,15 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     rm -rf /var/lib/apt/lists/*
 
 
+
+RUN npx -y playwright@1.47.0 install --with-deps chrome firefox
+
 # Install FFmpeg
 RUN wget https://www.johnvansickle.com/ffmpeg/old-releases/ffmpeg-6.0.1-amd64-static.tar.xz \
     && tar xvf ffmpeg-6.0.1-amd64-static.tar.xz \
     && mv ffmpeg-*-amd64-static/ffmpeg /usr/local/bin/ \
     && mv ffmpeg-*-amd64-static/ffprobe /usr/local/bin/ \
     && rm -rf ffmpeg-*-amd64-static*
-
-RUN npx -y playwright@1.47.0 install --with-deps chrome firefox
 
 # Install Python dependencies
 COPY requirements.txt /app/requirements.txt
