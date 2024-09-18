@@ -6,10 +6,12 @@ import runpod
 import envkey
 import os
 import tempfile
+import uuid
 
 async def js_handler(data: dict, timeout_seconds: int = 600):  # Default 10 minutes timeout
-    temp_file_path = '/tmp/scene_data.json'
-    output_file_path = '/tmp/scene_output.json'
+    random_id = uuid.uuid4().hex[:8]
+    temp_file_path = f'/tmp/scene_data_{random_id}.json'
+    output_file_path = f'/tmp/scene_output_{random_id}.json'
     
     with open(temp_file_path, 'w') as temp_file:
         json.dump(data, temp_file)

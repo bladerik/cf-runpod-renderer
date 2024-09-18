@@ -52,7 +52,6 @@ RUN pip3 install --no-cache-dir -r /app/requirements.txt
 WORKDIR /app
 
 # Copy the application code
-COPY . /app
 
 COPY package*.json ./
 COPY .npmrc ./
