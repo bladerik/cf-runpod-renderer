@@ -1,7 +1,7 @@
 import {
     SceneLayerComponentData,
     SceneDataJson,
-} from "@bladesk/cf-scene-builder";
+} from "@bladesk/cf-pixi-scene-builder";
 
 export type Font = {
     id: string;

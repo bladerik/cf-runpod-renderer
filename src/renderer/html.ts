@@ -5,13 +5,13 @@ import {
     PlacableConfigShape,
     SceneLayerComponent,
     Metadata,
-} from "@bladesk/cf-scene-builder";
+} from "@bladesk/cf-pixi-scene-builder";
 import fs from "fs";
 import sanitizeHtml from "sanitize-html";
 import { LambdaClient, InvokeCommand } from "@aws-sdk/client-lambda";
 import { cloneDeep } from "lodash-es";
 import { handleExecutionAndGetResults } from "../utils/stepFunctions.js";
-import { colorSchema } from "@bladesk/cf-scene-builder";
+import { colorSchema } from "@bladesk/cf-pixi-scene-builder";
 import md5 from "md5";
 import { stateMachineArn, execArn } from "../utils/stepFunctions.js";
 
@@ -49,8 +49,7 @@ import {
     type SceneLayer,
     type Config,
     type CSSConfig,
-    createElement,
-} from "@bladesk/cf-scene-builder";
+} from "@bladesk/cf-pixi-scene-builder";
 
 type AnimationType = "html-lines" | "html-words" | "html-chars" | "custom";
 type AnimationPreset = {
@@ -410,86 +409,6 @@ export const buildTextShadow = function (
         return `${shadows.join(", ")}`;
     }
     return "none";
-};
-
-export const buildTextElement = (
-    component: SceneLayerComponentData,
-    document: Document
-) => {
-    const attrs = component.element.attributes
-        ? (component.element.attributes as Config)
-        : {};
-    const animation = attrs.animation
-        ? (attrs.animation as unknown as AnimationPreset)
-        : null;
-    const isAnimation = animation ? true : false;
-
-    // remove <p> and other dissalowed tags
-    const textHtml = component.element.text
-        ? sanitizeText(component.element.text.replace("\n", "<br>"))
-        : null;
-    const html = textHtml ? wrapEmojis(textHtml) : null;
-    const isRichText = html ? /<(?!br\b)[^>]+>/i.test(html) : false;
-    const innerHTML = isRichText && !isAnimation ? `<p>${html}</p>` : html;
-
-    const config = buildTextShadowConfig(
-        configToCSSConfig(component.element.config as Config)
-    );
-    const elAttrs = {
-        style: {
-            ...config, //...component.element.config,
-            // top: `${component.element.config.y}px`,
-            // left: `${component.element.config.x}px`,
-            // width: `${component.element.config.width}px`,
-            // height: `${component.element.config.height}px`,
-        },
-        innerHTML,
-    };
-
-    const el = createElement(component.element.type, elAttrs, document);
-    if (el) {
-        const inlineStyle = ObjectToInlineCSS.parse({
-            ...config,
-            left: `${component.element.config.x}px`,
-            top: `${component.element.config.y}px`,
-        });
-        el.setAttribute("style", inlineStyle);
-    }
-
-    if (!el) {
-        throw new Error("Element is not an HTMLElement");
-    }
-
-    let isSubtitle = false;
-    const meta = component.metadata;
-    if (meta && meta.isSubtitle) {
-        isSubtitle = true;
-    }
-    if (isSubtitle) {
-        // hotfix for subtitles
-        const elChild = createElement("div", {}, document);
-        if (!elChild) {
-            throw new Error("Element Child is not an HTMLElement");
-        }
-        elChild.id = "elem";
-        el.id = "parent-elem";
-        elChild.dir = "auto";
-        elChild.classList.add("con-el");
-        // apply same flex-direction as parent
-        elChild.style.flexDirection = el.style.flexDirection;
-        if (innerHTML) {
-            el.innerHTML = "";
-            elChild.innerHTML = innerHTML;
-            el.appendChild(elChild);
-        }
-    } else {
-        el.classList.add("con-el");
-        el.id = "elem";
-    }
-    el.classList.add("absolute");
-    el.classList.add("flex");
-    el.dir = "auto";
-    return el;
 };
 
 export const configToCSSConfig = (config: Config): CSSConfig => {

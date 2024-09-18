@@ -42,7 +42,6 @@
         "@aws-sdk/client-sfn": "^3.363.0",
         "@aws-sdk/cloudfront-signer": "^3.329.0",
         "@bladesk/cf-pixi-scene-builder": "^0.2.5",
-        "@bladesk/cf-scene-builder": "^0.12.1",
         "axios": "^1.4.0",
         "canvas": "^2.11.2",
         "cookie-parser": "^1.4.6",
