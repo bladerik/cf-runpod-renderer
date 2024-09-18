@@ -1,0 +1,17 @@
+node_modules
+.DS_Store
+.env
+.env*
+.cloudflare
+.cache
+dist
+resources
+docker-compose.yml
+docker-compose-gcr.yml
+data
+data/*
+test
+.parcel*
+.parcel-cache*
+test*
+Dockerfile.*
