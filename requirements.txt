@@ -1,6 +1,5 @@
 fastapi
 uvicorn
-playwright
 pillow>=9.0.0
 runpod
 setuptools

@@ -1,5 +1,4 @@
-
-FROM nvidia/opengl:1.2-glvnd-runtime-ubuntu22.04
+FROM sitespeedio/node:ubuntu-22.04-nodejs-18.18.0
 
 # Set environment variables
 ENV DEBIAN_FRONTEND=noninteractive
@@ -29,19 +28,22 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         dumb-init \
         mesa-vulkan-drivers \
         vulkan-tools \
+        curl \
+        wget \
+        xz-utils \
         xvfb && \
     rm -rf /var/lib/apt/lists/*
 
-# RUN apt-get update && apt-get -y --no-install-recommends install ca-certificates tzdata libcanberra-gtk-module libexif12 pulseaudio attr fonts-dejavu-core fonts-freefont-ttf fonts-guru-extra fonts-kacst fonts-kacst-one fonts-khmeros-core fonts-lao fonts-liberation fonts-lklug-sinhala fonts-lohit-guru fonts-nanum fonts-opensymbol fonts-sil-abyssinica fonts-sil-padauk fonts-symbola fonts-takao-pgothic fonts-tibetan-machine fonts-tlwg-garuda-ttf fonts-tlwg-kinnari-ttf fonts-tlwg-laksaman-ttf fonts-tlwg-loma-ttf fonts-tlwg-mono-ttf fonts-tlwg-norasi-ttf fonts-tlwg-purisa-ttf fonts-tlwg-sawasdee-ttf fonts-tlwg-typewriter-ttf fonts-tlwg-typist-ttf fonts-tlwg-typo-ttf fonts-tlwg-umpush-ttf fonts-tlwg-waree-ttf ttf-bitstream-vera ttf-dejavu-core ttf-ubuntu-font-family fonts-arphic-ukai fonts-arphic-uming fonts-ipafont-mincho fonts-ipafont-gothic fonts-unfonts-core && rm -rf -- /var/lib/apt/lists /tmp/*.deb
 
-RUN apt-get update
-# RUN apt-get install -y libvulkan1
-# RUN add-apt-repository -y ppa:graphics-drivers/ppa
-# RUN apt-get install -y libnvidia-gl-550
+# Install FFmpeg
+RUN wget https://www.johnvansickle.com/ffmpeg/old-releases/ffmpeg-6.0.1-amd64-static.tar.xz \
+    && tar xvf ffmpeg-6.0.1-amd64-static.tar.xz \
+    && mv ffmpeg-*-amd64-static/ffmpeg /usr/local/bin/ \
+    && mv ffmpeg-*-amd64-static/ffprobe /usr/local/bin/ \
+    && rm -rf ffmpeg-*-amd64-static*
 
-RUN pip3 install playwright
-RUN playwright install-deps
-RUN playwright install chrome firefox
+RUN npx -y playwright@1.47.0 install --with-deps chrome firefox
+
 # Install Python dependencies
 COPY requirements.txt /app/requirements.txt
 RUN pip3 install --no-cache-dir -r /app/requirements.txt
@@ -51,6 +53,18 @@ WORKDIR /app
 
 # Copy the application code
 COPY . /app
+
+COPY package*.json ./
+COPY .npmrc ./
+
+RUN npm ci
+
+COPY . .
+COPY tsconfig.json ./
+
+RUN npm install typescript@5 -g
+RUN npx tsc -v && sleep 3
+RUN npm run build
 
 # Expose the port your application will run on
 EXPOSE 8000
